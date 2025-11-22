@@ -24,8 +24,10 @@ After pressing "GO!", the quiz will display and the timer will start. Type your 
 
 **Pause:** Pauses the timer. While paused, you can't make guesses or look at the list. (No cheating!)
 
-### Coming Soon
+### Best Times
 
-Hopefully a way to save your scores will be available soon.
+Currently, a text file saves the best time if it's better than the currently-saved time.
+
+Hopefully a way to save personalized scores will be available soon.
 
 Have fun, and send me screenshots!
