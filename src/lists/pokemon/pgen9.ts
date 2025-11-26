@@ -71,8 +71,7 @@ export const pgen9: Generation = {
       dex: 916,
       name: "oinkologne",
       displayName: "Oinkologne",
-      type: Type.Normal,
-      variants: ["Male Oinkologne", "Female Oinkologne"]
+      type: Type.Normal
     },
     {
       dex: 917,
@@ -129,8 +128,7 @@ export const pgen9: Generation = {
       dex: 925,
       name: "maushold",
       displayName: "Maushold",
-      type: Type.Normal,
-      variants: ["Family of Three Maushold", "Family of Four Maushold"]
+      type: Type.Normal
     },
     {
       dex: 926,
@@ -170,13 +168,7 @@ export const pgen9: Generation = {
       name: "squawkabilly",
       displayName: "Squawkabilly",
       type: Type.Normal,
-      type2: Type.Flying,
-      variants: [
-        "Green Plumage Squawkabilly",
-        "Blue Plumage Squawkabilly",
-        "Yellow Plumage Squawkabilly",
-        "White Plumage Squawkabilly"
-      ]
+      type2: Type.Flying
     },
     {
       dex: 932,
@@ -390,8 +382,7 @@ export const pgen9: Generation = {
       dex: 964,
       name: "palafin",
       displayName: "Palafin",
-      type: Type.Water,
-      variants: ["Zero Form Palafin", "Hero Form Palafin"]
+      type: Type.Water
     },
     {
       dex: 965,
@@ -483,12 +474,7 @@ export const pgen9: Generation = {
       name: "tatsugiri",
       displayName: "Tatsugiri",
       type: Type.Dragon,
-      type2: Type.Water,
-      variants: [
-        "Curly Form Tatsugiri",
-        "Droopy Form Tatsugiri",
-        "Stretchy Form Tatsugiri"
-      ]
+      type2: Type.Water
     },
     {
       dex: 979,
@@ -515,11 +501,7 @@ export const pgen9: Generation = {
       dex: 982,
       name: "dudunsparce",
       displayName: "Dudunsparce",
-      type: Type.Normal,
-      variants: [
-        "Two-Segment Form Dudunsparce",
-        "Three-Segment Form Dudunsparce"
-      ]
+      type: Type.Normal
     },
     {
       dex: 983,
@@ -649,8 +631,7 @@ export const pgen9: Generation = {
       dex: 999,
       name: "gimmighoul",
       displayName: "Gimmighoul",
-      type: Type.Ghost,
-      variants: ["Chest Form Gimmighoul", "Roaming Form Gimmighoul"]
+      type: Type.Ghost
     },
     {
       dex: 1000,
@@ -753,16 +734,14 @@ export const pgen9: Generation = {
       name: "poltchageist",
       displayName: "Poltchageist",
       type: Type.Grass,
-      type2: Type.Ghost,
-      variants: ["Counterfeit Poltchageist", "Artisan Poltchageist"]
+      type2: Type.Ghost
     },
     {
       dex: 1013,
       name: "sinistcha",
       displayName: "Sinistcha",
       type: Type.Grass,
-      type2: Type.Ghost,
-      variants: ["Unremarkable Sinistcha", "Masterpiece Sinistcha"]
+      type2: Type.Ghost
     },
     {
       dex: 1014,
@@ -791,14 +770,24 @@ export const pgen9: Generation = {
     {
       dex: 1017,
       name: "ogerpon",
+      img: "ogerpon",
       displayName: "Ogerpon",
       type: Type.Grass,
-      variants: ["Teal Mask Ogerpon"],
+      noDefaultForm: true,
       category: PokemonCategory.Legendary
     },
     {
       dex: 1017,
       name: "ogerpon",
+      img: "ogerpon-teal",
+      displayName: "Teal Mask Ogerpon",
+      type: Type.Grass,
+      isVariant: true
+    },
+    {
+      dex: 1017,
+      name: "ogerpon",
+      img: "ogerpon-wellspring",
       displayName: "Wellspring Mask Ogerpon",
       type: Type.Grass,
       type2: Type.Water,
@@ -807,6 +796,7 @@ export const pgen9: Generation = {
     {
       dex: 1017,
       name: "ogerpon",
+      img: "ogerpon-hearthflame",
       displayName: "Hearthflame Mask Ogerpon",
       type: Type.Grass,
       type2: Type.Fire,
@@ -815,6 +805,7 @@ export const pgen9: Generation = {
     {
       dex: 1017,
       name: "ogerpon",
+      img: "ogerpon-cornerstone",
       displayName: "Cornerstone Mask Ogerpon",
       type: Type.Grass,
       type2: Type.Rock,
@@ -871,11 +862,6 @@ export const pgen9: Generation = {
       name: "terapagos",
       displayName: "Terapagos",
       type: Type.Normal,
-      variants: [
-        "Normal Form Terapagos",
-        "Terastal Form Terapagos",
-        "Stellar Form Terapagos"
-      ],
       category: PokemonCategory.Legendary
     },
     {

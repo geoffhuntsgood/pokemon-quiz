@@ -48,8 +48,16 @@ export const pgen5: Generation = {
       name: "emboar",
       displayName: "Emboar",
       type: Type.Fire,
+      type2: Type.Fighting
+    },
+    {
+      dex: 500,
+      name: "emboar",
+      img: "emboar-mega",
+      displayName: "Mega Emboar",
+      type: Type.Fire,
       type2: Type.Fighting,
-      variants: ["Mega Emboar"]
+      isVariant: true
     },
     {
       dex: 501,
@@ -72,6 +80,7 @@ export const pgen5: Generation = {
     {
       dex: 503,
       name: "samurott",
+      img: "samurott-hisuian",
       displayName: "Hisuian Samurott",
       type: Type.Water,
       type2: Type.Dark,
@@ -243,8 +252,16 @@ export const pgen5: Generation = {
       name: "excadrill",
       displayName: "Excadrill",
       type: Type.Ground,
+      type2: Type.Steel
+    },
+    {
+      dex: 530,
+      name: "excadrill",
+      img: "excadrill-mega",
+      displayName: "Mega Excadrill",
+      type: Type.Ground,
       type2: Type.Steel,
-      variants: ["Mega Excadrill"]
+      isVariant: true
     },
     {
       dex: 531,
@@ -350,8 +367,16 @@ export const pgen5: Generation = {
       name: "scolipede",
       displayName: "Scolipede",
       type: Type.Bug,
+      type2: Type.Poison
+    },
+    {
+      dex: 545,
+      name: "scolipede",
+      img: "scolipede-mega",
+      displayName: "Mega Scolipede",
+      type: Type.Bug,
       type2: Type.Poison,
-      variants: ["Mega Scolipede"]
+      isVariant: true
     },
     {
       dex: 546,
@@ -382,6 +407,7 @@ export const pgen5: Generation = {
     {
       dex: 549,
       name: "lilligant",
+      img: "lilligant-hisuian",
       displayName: "Hisuian Lilligant",
       type: Type.Grass,
       type2: Type.Fighting,
@@ -391,12 +417,7 @@ export const pgen5: Generation = {
       dex: 550,
       name: "basculin",
       displayName: "Basculin",
-      type: Type.Water,
-      variants: [
-        "Red-Striped Form Basculin",
-        "Blue-Striped Form Basculin",
-        "White-Striped Form Basculin"
-      ]
+      type: Type.Water
     },
     {
       dex: 551,
@@ -428,6 +449,7 @@ export const pgen5: Generation = {
     {
       dex: 554,
       name: "darumaka",
+      img: "darumaka-galarian",
       displayName: "Galarian Darumaka",
       type: Type.Ice,
       isVariant: true
@@ -441,6 +463,7 @@ export const pgen5: Generation = {
     {
       dex: 555,
       name: "darmanitan",
+      img: "darmanitan-zen",
       displayName: "Zen Mode Darmanitan",
       type: Type.Fire,
       type2: Type.Psychic,
@@ -449,6 +472,7 @@ export const pgen5: Generation = {
     {
       dex: 555,
       name: "darmanitan",
+      img: "darmanitan-galarian",
       displayName: "Galarian Darmanitan",
       type: Type.Ice,
       isVariant: true
@@ -456,6 +480,7 @@ export const pgen5: Generation = {
     {
       dex: 555,
       name: "darmanitan",
+      img: "darmanitan-galarianzen",
       displayName: "Galarian Zen Mode Darmanitan",
       type: Type.Ice,
       type2: Type.Fire,
@@ -493,8 +518,16 @@ export const pgen5: Generation = {
       name: "scrafty",
       displayName: "Scrafty",
       type: Type.Dark,
+      type2: Type.Fighting
+    },
+    {
+      dex: 560,
+      name: "scrafty",
+      img: "scrafty-mega",
+      displayName: "Mega Scrafty",
+      type: Type.Dark,
       type2: Type.Fighting,
-      variants: ["Mega Scrafty"]
+      isVariant: true
     },
     {
       dex: 561,
@@ -512,6 +545,7 @@ export const pgen5: Generation = {
     {
       dex: 562,
       name: "yamask",
+      img: "yamask-galarian",
       displayName: "Galarian Yamask",
       type: Type.Ground,
       type2: Type.Ghost,
@@ -565,8 +599,15 @@ export const pgen5: Generation = {
       dex: 569,
       name: "garbodor",
       displayName: "Garbodor",
+      type: Type.Poison
+    },
+    {
+      dex: 569,
+      name: "garbodor",
+      img: "garbodor-gmax",
+      displayName: "Gigantamax Garbodor",
       type: Type.Poison,
-      variants: ["Gigantamax Garbodor"]
+      isVariant: true
     },
     {
       dex: 570,
@@ -577,6 +618,7 @@ export const pgen5: Generation = {
     {
       dex: 570,
       name: "zorua",
+      img: "zorua-hisuian",
       displayName: "Hisuian Zorua",
       type: Type.Normal,
       type2: Type.Ghost,
@@ -591,6 +633,7 @@ export const pgen5: Generation = {
     {
       dex: 571,
       name: "zoroark",
+      img: "zoroark-hisuian",
       displayName: "Hisuian Zoroark",
       type: Type.Normal,
       type2: Type.Ghost,
@@ -681,26 +724,14 @@ export const pgen5: Generation = {
       name: "deerling",
       displayName: "Deerling",
       type: Type.Normal,
-      type2: Type.Grass,
-      variants: [
-        "Spring Form Deerling",
-        "Summer Form Deerling",
-        "Autumn Form Deerling",
-        "Winter Form Deerling"
-      ]
+      type2: Type.Grass
     },
     {
       dex: 586,
       name: "sawsbuck",
       displayName: "Sawsbuck",
       type: Type.Normal,
-      type2: Type.Grass,
-      variants: [
-        "Spring Form Sawsbuck",
-        "Summer Form Sawsbuck",
-        "Autumn Form Sawsbuck",
-        "Winter Form Sawsbuck"
-      ]
+      type2: Type.Grass
     },
     {
       dex: 587,
@@ -818,8 +849,15 @@ export const pgen5: Generation = {
       dex: 604,
       name: "eelektross",
       displayName: "Eelektross",
+      type: Type.Electric
+    },
+    {
+      dex: 604,
+      name: "eelektross",
+      img: "eelektross-mega",
+      displayName: "Mega Eelektross",
       type: Type.Electric,
-      variants: ["Mega Eelektross"]
+      isVariant: true
     },
     {
       dex: 605,
@@ -852,8 +890,16 @@ export const pgen5: Generation = {
       name: "chandelure",
       displayName: "Chandelure",
       type: Type.Ghost,
+      type2: Type.Fire
+    },
+    {
+      dex: 609,
+      name: "chandelure",
+      img: "chandelure-mega",
+      displayName: "Mega Chandelure",
+      type: Type.Ghost,
       type2: Type.Fire,
-      variants: ["Mega Chandelure"]
+      isVariant: true
     },
     {
       dex: 610,
@@ -913,6 +959,7 @@ export const pgen5: Generation = {
     {
       dex: 618,
       name: "stunfisk",
+      img: "stunfisk-galarian",
       displayName: "Galarian Stunfisk",
       type: Type.Ground,
       type2: Type.Steel,
@@ -987,6 +1034,7 @@ export const pgen5: Generation = {
     {
       dex: 628,
       name: "braviary",
+      img: "braviary-hisuian",
       displayName: "Hisuian Braviary",
       type: Type.Psychic,
       type2: Type.Flying,
@@ -1083,7 +1131,6 @@ export const pgen5: Generation = {
       name: "tornadus",
       displayName: "Tornadus",
       type: Type.Flying,
-      variants: ["Incarnate Forme Tornadus", "Therian Forme Tornadus"],
       category: PokemonCategory.Legendary
     },
     {
@@ -1092,7 +1139,6 @@ export const pgen5: Generation = {
       displayName: "Thundurus",
       type: Type.Electric,
       type2: Type.Flying,
-      variants: ["Incarnate Forme Thundurus", "Therian Forme Thundurus"],
       category: PokemonCategory.Legendary
     },
     {
@@ -1117,7 +1163,6 @@ export const pgen5: Generation = {
       displayName: "Landorus",
       type: Type.Ground,
       type2: Type.Flying,
-      variants: ["Incarnate Forme Landorus", "Therian Forme Landorus"],
       category: PokemonCategory.Legendary
     },
     {
@@ -1126,7 +1171,6 @@ export const pgen5: Generation = {
       displayName: "Kyurem",
       type: Type.Dragon,
       type2: Type.Ice,
-      variants: ["White Kyurem", "Black Kyurem"],
       category: PokemonCategory.Legendary
     },
     {
@@ -1135,12 +1179,12 @@ export const pgen5: Generation = {
       displayName: "Keldeo",
       type: Type.Water,
       type2: Type.Fighting,
-      variants: ["Ordinary Form Keldeo", "Resolute Form Keldeo"],
       category: PokemonCategory.Mythical
     },
     {
       dex: 648,
       name: "meloetta",
+      img: "meloetta-aria",
       displayName: "Meloetta",
       type: Type.Normal,
       type2: Type.Varies,
@@ -1150,6 +1194,7 @@ export const pgen5: Generation = {
     {
       dex: 648,
       name: "meloetta",
+      img: "meloetta-aria",
       displayName: "Aria Forme Meloetta",
       type: Type.Normal,
       type2: Type.Psychic,
@@ -1158,6 +1203,7 @@ export const pgen5: Generation = {
     {
       dex: 648,
       name: "meloetta",
+      img: "meloetta-pirouette",
       displayName: "Pirouette Forme Meloetta",
       type: Type.Normal,
       type2: Type.Fighting,
@@ -1169,12 +1215,6 @@ export const pgen5: Generation = {
       displayName: "Genesect",
       type: Type.Bug,
       type2: Type.Steel,
-      variants: [
-        "Douse Drive Genesect",
-        "Shock Drive Genesect",
-        "Burn Drive Genesect",
-        "Chill Drive Genesect"
-      ],
       category: PokemonCategory.Mythical
     }
   ]

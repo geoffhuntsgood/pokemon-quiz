@@ -1,6 +1,6 @@
-# Pokélist:  Pokémon-related quizzes
+# Quizémon:  Pokémon-related quizzes
 
-This app lets you show off your Pokémon knowledge through various quizzes. Hosted at https://geoffhuntsgood.com/pokelist.
+This app lets you show off your Pokémon knowledge through various quizzes. Hosted at https://geoffhuntsgood.com/quizemon.
 
 ## Configuration
 

@@ -21,8 +21,15 @@ export const pgen6: Generation = {
       name: "chesnaught",
       displayName: "Chesnaught",
       type: Type.Grass,
+      type2: Type.Fighting
+    },
+    {
+      dex: 652,
+      name: "chesnaught-mega",
+      displayName: "Mega Chesnaught",
+      type: Type.Grass,
       type2: Type.Fighting,
-      variants: ["Mega Chesnaught"]
+      isVariant: true
     },
     {
       dex: 653,
@@ -41,8 +48,16 @@ export const pgen6: Generation = {
       name: "delphox",
       displayName: "Delphox",
       type: Type.Fire,
+      type2: Type.Psychic
+    },
+    {
+      dex: 655,
+      name: "delphox",
+      img: "delphox-mega",
+      displayName: "Mega Delphox",
+      type: Type.Fire,
       type2: Type.Psychic,
-      variants: ["Mega Delphox"]
+      isVariant: true
     },
     {
       dex: 656,
@@ -61,8 +76,15 @@ export const pgen6: Generation = {
       name: "greninja",
       displayName: "Greninja",
       type: Type.Water,
+      type2: Type.Dark
+    },
+    {
+      dex: 658,
+      name: "greninja-mega",
+      displayName: "Mega Greninja",
+      type: Type.Water,
       type2: Type.Dark,
-      variants: ["Battle Bond Greninja", "Mega Greninja"]
+      isVariant: true
     },
     {
       dex: 659,
@@ -115,29 +137,7 @@ export const pgen6: Generation = {
       name: "vivillon",
       displayName: "Vivillon",
       type: Type.Bug,
-      type2: Type.Flying,
-      variants: [
-        "Icy Snow Vivillon",
-        "Polar Vivillon",
-        "Tundra Vivillon",
-        "Continental Vivillon",
-        "Garden Vivillon",
-        "Elegant Vivillon",
-        "Meadow Vivillon",
-        "Modern Vivillon",
-        "Marine Vivillon",
-        "Archipelago Vivillon",
-        "High Plains Vivillon",
-        "Sandstorm Vivillon",
-        "River Vivillon",
-        "Monsoon Vivillon",
-        "Savanna Vivillon",
-        "Sun Vivillon",
-        "Ocean Vivillon",
-        "Jungle Vivillon",
-        "Fancy Vivillon",
-        "Poké Ball Vivillon"
-      ]
+      type2: Type.Flying
     },
     {
       dex: 667,
@@ -151,49 +151,42 @@ export const pgen6: Generation = {
       name: "pyroar",
       displayName: "Pyroar",
       type: Type.Fire,
+      type2: Type.Normal
+    },
+    {
+      dex: 668,
+      name: "pyroar",
+      img: "pyroar-mega",
+      displayName: "Mega Pyroar",
+      type: Type.Fire,
       type2: Type.Normal,
-      variants: ["Mega Pyroar"]
+      isVariant: true
     },
     {
       dex: 669,
       name: "flabebe",
       displayName: "Flabébé",
-      type: Type.Fairy,
-      variants: [
-        "Red Flower Flabébé",
-        "Yellow Flower Flabébé",
-        "Orange Flower Flabébé",
-        "Blue Flower Flabébé",
-        "White Flower Flabébé"
-      ]
+      type: Type.Fairy
     },
     {
       dex: 670,
       name: "floette",
       displayName: "Floette",
+      type: Type.Fairy
+    },
+    {
+      dex: 670,
+      name: "floette",
+      img: "floette-mega",
+      displayName: "Mega Eternal Flower Floette",
       type: Type.Fairy,
-      variants: [
-        "Red Flower Floette",
-        "Yellow Flower Floette",
-        "Orange Flower Floette",
-        "Blue Flower Floette",
-        "White Flower Floette",
-        "Eternal Flower Floette",
-        "Mega Eternal Flower Floette"
-      ]
+      isVariant: true
     },
     {
       dex: 671,
       name: "florges",
       displayName: "Florges",
-      type: Type.Fairy,
-      variants: [
-        "Red Flower Florges",
-        "Yellow Flower Florges",
-        "Orange Flower Florges",
-        "Blue Flower Florges",
-        "White Flower Florges"
-      ]
+      type: Type.Fairy
     },
     {
       dex: 672,
@@ -224,19 +217,7 @@ export const pgen6: Generation = {
       dex: 676,
       name: "furfrou",
       displayName: "Furfrou",
-      type: Type.Normal,
-      variants: [
-        "Natural Furfrou",
-        "Heart Trim Furfrou",
-        "Star Trim Furfrou",
-        "Diamond Trim Furfrou",
-        "Debutante Trim Furfrou",
-        "Matron Trim Furfrou",
-        "Dandy Trim Furfrou",
-        "La Reine Trim Furfrou",
-        "Kabuki Trim Furfrou",
-        "Pharaoh Trim Furfrou"
-      ]
+      type: Type.Normal
     },
     {
       dex: 677,
@@ -248,8 +229,7 @@ export const pgen6: Generation = {
       dex: 678,
       name: "meowstic",
       displayName: "Meowstic",
-      type: Type.Psychic,
-      variants: ["Male Meowstic", "Female Meowstic"]
+      type: Type.Psychic
     },
     {
       dex: 679,
@@ -270,8 +250,7 @@ export const pgen6: Generation = {
       name: "aegislash",
       displayName: "Aegislash",
       type: Type.Steel,
-      type2: Type.Ghost,
-      variants: ["Shield Forme Aegislash", "Blade Forme Aegislash"]
+      type2: Type.Ghost
     },
     {
       dex: 682,
@@ -309,8 +288,16 @@ export const pgen6: Generation = {
       name: "malamar",
       displayName: "Malamar",
       type: Type.Dark,
+      type2: Type.Psychic
+    },
+    {
+      dex: 687,
+      name: "malamar",
+      img: "malamar-mega",
+      displayName: "Mega Malamar",
+      type: Type.Dark,
       type2: Type.Psychic,
-      variants: ["Mega Malamar"]
+      isVariant: true
     },
     {
       dex: 688,
@@ -329,6 +316,7 @@ export const pgen6: Generation = {
     {
       dex: 689,
       name: "barbaracle",
+      img: "barbaracle-mega",
       displayName: "Mega Barbaracle",
       type: Type.Rock,
       type2: Type.Fighting,
@@ -346,8 +334,16 @@ export const pgen6: Generation = {
       name: "dragalge",
       displayName: "Dragalge",
       type: Type.Poison,
+      type2: Type.Dragon
+    },
+    {
+      dex: 691,
+      name: "dragalge",
+      img: "dragalge-mega",
+      displayName: "Mega Dragalge",
+      type: Type.Poison,
       type2: Type.Dragon,
-      variants: ["Mega Dragalge"]
+      isVariant: true
     },
     {
       dex: 692,
@@ -418,8 +414,16 @@ export const pgen6: Generation = {
       name: "hawlucha",
       displayName: "Hawlucha",
       type: Type.Fighting,
+      type2: Type.Flying
+    },
+    {
+      dex: 701,
+      name: "hawlucha",
+      img: "hawlucha-mega",
+      displayName: "Mega Hawlucha",
+      type: Type.Fighting,
       type2: Type.Flying,
-      variants: ["Mega Hawlucha"]
+      isVariant: true
     },
     {
       dex: 702,
@@ -450,6 +454,7 @@ export const pgen6: Generation = {
     {
       dex: 705,
       name: "sliggoo",
+      img: "sliggoo-hisuian",
       displayName: "Hisuian Sliggoo",
       type: Type.Steel,
       type2: Type.Dragon,
@@ -464,6 +469,7 @@ export const pgen6: Generation = {
     {
       dex: 706,
       name: "goodra",
+      img: "goodra-hisuian",
       displayName: "Hisuian Goodra",
       type: Type.Steel,
       type2: Type.Dragon,
@@ -519,6 +525,7 @@ export const pgen6: Generation = {
     {
       dex: 713,
       name: "avalugg",
+      img: "avalugg-hisuian",
       displayName: "Hisuian Avalugg",
       type: Type.Ice,
       type2: Type.Rock,
@@ -559,13 +566,16 @@ export const pgen6: Generation = {
       displayName: "Zygarde",
       type: Type.Dragon,
       type2: Type.Ground,
-      variants: [
-        "50% Forme Zygarde",
-        "10% Forme Zygarde",
-        "Complete Forme Zygarde",
-        "Mega Zygarde"
-      ],
       category: PokemonCategory.Legendary
+    },
+    {
+      dex: 718,
+      name: "zygarde",
+      img: "zygarde-mega",
+      displayName: "Mega Zygarde",
+      type: Type.Dragon,
+      type2: Type.Ground,
+      isVariant: true
     },
     {
       dex: 719,
@@ -573,12 +583,21 @@ export const pgen6: Generation = {
       displayName: "Diancie",
       type: Type.Rock,
       type2: Type.Fairy,
-      variants: ["Mega Diancie"],
       category: PokemonCategory.Mythical
+    },
+    {
+      dex: 719,
+      name: "diancie",
+      img: "diancie-mega",
+      displayName: "Mega Diancie",
+      type: Type.Rock,
+      type2: Type.Fairy,
+      isVariant: true
     },
     {
       dex: 720,
       name: "hoopa",
+      img: "hoopa-confined",
       displayName: "Hoopa",
       type: Type.Psychic,
       type2: Type.Varies,
@@ -588,6 +607,7 @@ export const pgen6: Generation = {
     {
       dex: 720,
       name: "hoopa",
+      img: "hoopa-confined",
       displayName: "Hoopa Confined",
       type: Type.Psychic,
       type2: Type.Ghost,
@@ -596,6 +616,7 @@ export const pgen6: Generation = {
     {
       dex: 720,
       name: "hoopa",
+      img: "hoopa-unbound",
       displayName: "Hoopa Unbound",
       type: Type.Psychic,
       type2: Type.Dark,

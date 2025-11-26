@@ -3,9 +3,7 @@ import {
   TableBody,
   TableCell,
   TableHead,
-  TableRow,
-  Tooltip,
-  Typography
+  TableRow
 } from "@mui/material";
 import { useMemo } from "react";
 import type { Ability, Move, Pokemon } from "../../classes";
@@ -25,10 +23,14 @@ export const QuizTable = ({
 }) => {
   const styles = {
     fixedTable: {
-      tableLayout: "fixed"
+      tableLayout: "fixed",
+      width: "25rem"
     },
     firstTableItem: {
       width: "5%"
+    },
+    lastTableItem: {
+      width: "20%"
     }
   };
 
@@ -42,6 +44,14 @@ export const QuizTable = ({
     }
   };
 
+  const getImg = (p: Pokemon) => {
+    let imgName = "empty";
+    if (foundItems.includes(p.displayName) || done) {
+      imgName = p.img ? p.img : p.name;
+    }
+    return `img/pokemon/${imgName}.png`;
+  };
+
   const MemoizedPokeRow = (p: Pokemon) => {
     const memoName = getName(p.displayName);
 
@@ -49,32 +59,18 @@ export const QuizTable = ({
       () => (
         <TableRow key={p.displayName}>
           <TableCell>{p.dex}</TableCell>
-          {p.variants && (
-            <>
-              {foundItems.includes(p.displayName) && (
-                <Tooltip
-                  title={p.variants.map((v: string, index: number) => (
-                    <>
-                      {index === 0 ? (
-                        <>
-                          <Typography variant="h4">Variants:</Typography>
-                          <Typography variant="h4">{v}</Typography>
-                        </>
-                      ) : (
-                        <Typography variant="h4">{v}</Typography>
-                      )}
-                    </>
-                  ))}
-                >
-                  <TableCell>{memoName}</TableCell>
-                </Tooltip>
-              )}
-              {!foundItems.includes(p.displayName) && (
-                <TableCell>{memoName}</TableCell>
-              )}
-            </>
-          )}
-          {!p.variants && <TableCell>{memoName}</TableCell>}
+          <TableCell>
+            <img
+              height="50"
+              style={{
+                marginLeft: "-24px",
+                marginTop: "-20px",
+                marginBottom: "-10px"
+              }}
+              src={getImg(p)}
+            />
+            {memoName}
+          </TableCell>
           <TableCell>
             <TypeBadge type={p.type} type2={p.type2} />
           </TableCell>
@@ -87,14 +83,21 @@ export const QuizTable = ({
   const MemoizedMoveRow = (m: Move) => {
     const memoName = getName(m.displayName);
 
+    const getThirdCol = () => {
+      const ref = (items[0] as Move).type;
+      if ((items as Move[]).every((move: Move) => move.type === ref)) {
+        return m.cat;
+      } else {
+        return <TypeBadge type={m.type} />;
+      }
+    };
+
     return useMemo(
       () => (
         <TableRow key={`${m.displayName}-${Math.random()}`}>
           <TableCell>{m.num}</TableCell>
           <TableCell>{memoName}</TableCell>
-          <TableCell>
-            <TypeBadge type={m.type} />
-          </TableCell>
+          <TableCell>{getThirdCol()}</TableCell>
         </TableRow>
       ),
       [memoName, m]
@@ -134,7 +137,7 @@ export const QuizTable = ({
         <TableRow>
           <TableCell sx={styles.firstTableItem}>{headers[0]}</TableCell>
           <TableCell>{headers[1]}</TableCell>
-          <TableCell>{headers[2]}</TableCell>
+          <TableCell sx={styles.lastTableItem}>{headers[2]}</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>{getTableRows()}</TableBody>

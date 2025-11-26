@@ -25,6 +25,7 @@ export const pgen3: Generation = {
     {
       dex: 254,
       name: "sceptile",
+      img: "sceptile-mega",
       displayName: "Mega Sceptile",
       type: Type.Grass,
       type2: Type.Dragon,
@@ -48,8 +49,16 @@ export const pgen3: Generation = {
       name: "blaziken",
       displayName: "Blaziken",
       type: Type.Fire,
+      type2: Type.Fighting
+    },
+    {
+      dex: 257,
+      name: "blaziken",
+      img: "blaziken-mega",
+      displayName: "Mega Blaziken",
+      type: Type.Fire,
       type2: Type.Fighting,
-      variants: ["Mega Blaziken"]
+      isVariant: true
     },
     {
       dex: 258,
@@ -69,8 +78,16 @@ export const pgen3: Generation = {
       name: "swampert",
       displayName: "Swampert",
       type: Type.Water,
+      type2: Type.Ground
+    },
+    {
+      dex: 260,
+      name: "swampert",
+      img: "swampert-mega",
+      displayName: "Mega Swampert",
+      type: Type.Water,
       type2: Type.Ground,
-      variants: ["Mega Swampert"]
+      isVariant: true
     },
     {
       dex: 261,
@@ -93,6 +110,7 @@ export const pgen3: Generation = {
     {
       dex: 263,
       name: "zigzagoon",
+      img: "zigzagoon-galarian",
       displayName: "Galarian Zigzagoon",
       type: Type.Dark,
       type2: Type.Normal,
@@ -107,6 +125,7 @@ export const pgen3: Generation = {
     {
       dex: 264,
       name: "linoone",
+      img: "linoone-galarian",
       displayName: "Galarian Linoone",
       type: Type.Dark,
       type2: Type.Normal,
@@ -232,8 +251,16 @@ export const pgen3: Generation = {
       name: "gardevoir",
       displayName: "Gardevoir",
       type: Type.Psychic,
+      type2: Type.Fairy
+    },
+    {
+      dex: 282,
+      name: "gardevoir",
+      img: "gardevoir-mega",
+      displayName: "Mega Gardevoir",
+      type: Type.Psychic,
       type2: Type.Fairy,
-      variants: ["Mega Gardevoir"]
+      isVariant: true
     },
     {
       dex: 283,
@@ -362,16 +389,32 @@ export const pgen3: Generation = {
       name: "sableye",
       displayName: "Sableye",
       type: Type.Dark,
+      type2: Type.Ghost
+    },
+    {
+      dex: 302,
+      name: "sableye",
+      img: "sableye-mega",
+      displayName: "Mega Sableye",
+      type: Type.Dark,
       type2: Type.Ghost,
-      variants: ["Mega Sableye"]
+      isVariant: true
     },
     {
       dex: 303,
       name: "mawile",
       displayName: "Mawile",
       type: Type.Steel,
+      type2: Type.Fairy
+    },
+    {
+      dex: 303,
+      name: "mawile",
+      img: "mawile-mega",
+      displayName: "Mega Mawile",
+      type: Type.Steel,
       type2: Type.Fairy,
-      variants: ["Mega Mawile"]
+      isVariant: true
     },
     {
       dex: 304,
@@ -397,6 +440,7 @@ export const pgen3: Generation = {
     {
       dex: 306,
       name: "aggron",
+      img: "aggron-mega",
       displayName: "Mega Aggron",
       type: Type.Steel,
       isVariant: true
@@ -413,8 +457,16 @@ export const pgen3: Generation = {
       name: "medicham",
       displayName: "Medicham",
       type: Type.Fighting,
+      type2: Type.Psychic
+    },
+    {
+      dex: 308,
+      name: "medicham",
+      img: "medicham-mega",
+      displayName: "Mega Medicham",
+      type: Type.Fighting,
       type2: Type.Psychic,
-      variants: ["Mega Medicham"]
+      isVariant: true
     },
     {
       dex: 309,
@@ -426,8 +478,15 @@ export const pgen3: Generation = {
       dex: 310,
       name: "manectric",
       displayName: "Manectric",
+      type: Type.Electric
+    },
+    {
+      dex: 310,
+      name: "manectric",
+      img: "manectric-mega",
+      displayName: "Mega Manectric",
       type: Type.Electric,
-      variants: ["Mega Manectric"]
+      isVariant: true
     },
     {
       dex: 311,
@@ -484,8 +543,16 @@ export const pgen3: Generation = {
       name: "sharpedo",
       displayName: "Sharpedo",
       type: Type.Water,
+      type2: Type.Dark
+    },
+    {
+      dex: 319,
+      name: "sharpedo",
+      img: "sharpedo-mega",
+      displayName: "Mega Sharpedo",
+      type: Type.Water,
       type2: Type.Dark,
-      variants: ["Mega Sharpedo"]
+      isVariant: true
     },
     {
       dex: 320,
@@ -511,8 +578,16 @@ export const pgen3: Generation = {
       name: "camerupt",
       displayName: "Camerupt",
       type: Type.Fire,
+      type2: Type.Ground
+    },
+    {
+      dex: 323,
+      name: "camerupt",
+      img: "camerupt-mega",
+      displayName: "Mega Camerupt",
+      type: Type.Fire,
       type2: Type.Ground,
-      variants: ["Mega Camerupt"]
+      isVariant: true
     },
     {
       dex: 324,
@@ -588,6 +663,7 @@ export const pgen3: Generation = {
     {
       dex: 334,
       name: "altaria",
+      img: "altaria-mega",
       displayName: "Mega Altaria",
       type: Type.Dragon,
       type2: Type.Fairy,
@@ -713,6 +789,7 @@ export const pgen3: Generation = {
     {
       dex: 351,
       name: "castform",
+      img: "castform-sunny",
       displayName: "Sunny Form Castform",
       type: Type.Fire,
       isVariant: true
@@ -720,6 +797,7 @@ export const pgen3: Generation = {
     {
       dex: 351,
       name: "castform",
+      img: "castform-rainy",
       displayName: "Rainy Form Castform",
       type: Type.Water,
       isVariant: true
@@ -727,6 +805,7 @@ export const pgen3: Generation = {
     {
       dex: 351,
       name: "castform",
+      img: "castform-snowy",
       displayName: "Snowy Form Castform",
       type: Type.Ice,
       isVariant: true
@@ -747,8 +826,15 @@ export const pgen3: Generation = {
       dex: 354,
       name: "banette",
       displayName: "Banette",
+      type: Type.Ghost
+    },
+    {
+      dex: 354,
+      name: "banette",
+      img: "banette-mega",
+      displayName: "Mega Banette",
       type: Type.Ghost,
-      variants: ["Mega Banette"]
+      isVariant: true
     },
     {
       dex: 355,
@@ -779,8 +865,15 @@ export const pgen3: Generation = {
       dex: 359,
       name: "absol",
       displayName: "Absol",
+      type: Type.Dark
+    },
+    {
+      dex: 359,
+      name: "absol",
+      img: "absol-mega",
+      displayName: "Mega Absol",
       type: Type.Dark,
-      variants: ["Mega Absol"]
+      isVariant: true
     },
     {
       dex: 360,
@@ -799,8 +892,15 @@ export const pgen3: Generation = {
       dex: 362,
       name: "glalie",
       displayName: "Glalie",
+      type: Type.Ice
+    },
+    {
+      dex: 362,
+      name: "glalie",
+      img: "glalie-mega",
+      displayName: "Mega Glalie",
       type: Type.Ice,
-      variants: ["Mega Glalie"]
+      isVariant: true
     },
     {
       dex: 363,
@@ -871,8 +971,16 @@ export const pgen3: Generation = {
       name: "salamence",
       displayName: "Salamence",
       type: Type.Dragon,
+      type2: Type.Flying
+    },
+    {
+      dex: 373,
+      name: "salamence",
+      img: "salamence-mega",
+      displayName: "Mega Salamence",
+      type: Type.Dragon,
       type2: Type.Flying,
-      variants: ["Mega Salamence"]
+      isVariant: true
     },
     {
       dex: 374,
@@ -893,8 +1001,16 @@ export const pgen3: Generation = {
       name: "metagross",
       displayName: "Metagross",
       type: Type.Steel,
+      type2: Type.Psychic
+    },
+    {
+      dex: 376,
+      name: "metagross",
+      img: "metagross-mega",
+      displayName: "Mega Metagross",
+      type: Type.Steel,
       type2: Type.Psychic,
-      variants: ["Mega Metagross"]
+      isVariant: true
     },
     {
       dex: 377,
@@ -923,8 +1039,16 @@ export const pgen3: Generation = {
       displayName: "Latias",
       type: Type.Dragon,
       type2: Type.Psychic,
-      variants: ["Mega Latias"],
       category: PokemonCategory.Legendary
+    },
+    {
+      dex: 380,
+      name: "latias",
+      img: "latias-mega",
+      displayName: "Mega Latias",
+      type: Type.Dragon,
+      type2: Type.Psychic,
+      isVariant: true
     },
     {
       dex: 381,
@@ -932,16 +1056,31 @@ export const pgen3: Generation = {
       displayName: "Latios",
       type: Type.Dragon,
       type2: Type.Psychic,
-      variants: ["Mega Latios"],
       category: PokemonCategory.Legendary
+    },
+    {
+      dex: 381,
+      name: "latios",
+      img: "latios-mega",
+      displayName: "Mega Latios",
+      type: Type.Dragon,
+      type2: Type.Psychic,
+      isVariant: true
     },
     {
       dex: 382,
       name: "kyogre",
       displayName: "Kyogre",
       type: Type.Water,
-      variants: ["Primal Kyogre"],
       category: PokemonCategory.Legendary
+    },
+    {
+      dex: 382,
+      name: "kyogre",
+      img: "kyogre-primal",
+      displayName: "Primal Kyogre",
+      type: Type.Water,
+      isVariant: true
     },
     {
       dex: 383,
@@ -953,6 +1092,7 @@ export const pgen3: Generation = {
     {
       dex: 383,
       name: "groudon",
+      img: "groudon-primal",
       displayName: "Primal Groudon",
       type: Type.Ground,
       type2: Type.Fire,
@@ -964,8 +1104,16 @@ export const pgen3: Generation = {
       displayName: "Rayquaza",
       type: Type.Dragon,
       type2: Type.Flying,
-      variants: ["Mega Rayquaza"],
       category: PokemonCategory.Legendary
+    },
+    {
+      dex: 384,
+      name: "rayquaza",
+      img: "rayquaza-mega",
+      displayName: "Mega Rayquaza",
+      type: Type.Dragon,
+      type2: Type.Flying,
+      isVariant: true
     },
     {
       dex: 385,
@@ -980,12 +1128,6 @@ export const pgen3: Generation = {
       name: "deoxys",
       displayName: "Deoxys",
       type: Type.Psychic,
-      variants: [
-        "Normal Forme Deoxys",
-        "Attack Forme Deoxys",
-        "Defense Forme Deoxys",
-        "Speed Forme Deoxys"
-      ],
       category: PokemonCategory.Mythical
     }
   ]

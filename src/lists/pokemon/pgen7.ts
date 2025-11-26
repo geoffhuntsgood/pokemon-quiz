@@ -28,6 +28,7 @@ export const pgen7: Generation = {
     {
       dex: 724,
       name: "decidueye",
+      img: "decidueye-hisuian",
       displayName: "Hisuian Decidueye",
       type: Type.Grass,
       type2: Type.Fighting,
@@ -140,6 +141,7 @@ export const pgen7: Generation = {
     {
       dex: 741,
       name: "oricorio",
+      img: "oricorio-baile",
       displayName: "Oricorio",
       type: Type.Varies,
       type2: Type.Flying,
@@ -148,6 +150,7 @@ export const pgen7: Generation = {
     {
       dex: 741,
       name: "oricorio",
+      img: "oricorio-baile",
       displayName: "Baile Style Oricorio",
       type: Type.Fire,
       type2: Type.Flying,
@@ -156,6 +159,7 @@ export const pgen7: Generation = {
     {
       dex: 741,
       name: "oricorio",
+      img: "oricorio-pompom",
       displayName: "Pom-Pom Style Oricorio",
       type: Type.Electric,
       type2: Type.Flying,
@@ -164,6 +168,7 @@ export const pgen7: Generation = {
     {
       dex: 741,
       name: "oricorio",
+      img: "oricorio-pau",
       displayName: "Pa'u Style Oricorio",
       type: Type.Psychic,
       type2: Type.Flying,
@@ -172,6 +177,7 @@ export const pgen7: Generation = {
     {
       dex: 741,
       name: "oricorio",
+      img: "oricorio-sensu",
       displayName: "Sensu Style Oricorio",
       type: Type.Ghost,
       type2: Type.Flying,
@@ -195,26 +201,19 @@ export const pgen7: Generation = {
       dex: 744,
       name: "rockruff",
       displayName: "Rockruff",
-      type: Type.Rock,
-      variants: ["Own Tempo Rockruff"]
+      type: Type.Rock
     },
     {
       dex: 745,
       name: "lycanroc",
       displayName: "Lycanroc",
-      type: Type.Rock,
-      variants: [
-        "Midday Form Lycanroc",
-        "Midnight Form Lycanroc",
-        "Dusk Form Lycanroc"
-      ]
+      type: Type.Rock
     },
     {
       dex: 746,
       name: "wishiwashi",
       displayName: "Wishiwashi",
-      type: Type.Water,
-      variants: ["Solo Form Wishiwashi", "School Form Wishiwashi"]
+      type: Type.Water
     },
     {
       dex: 747,
@@ -398,6 +397,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-fighting",
       displayName: "Fighting Silvally",
       type: Type.Fighting,
       isVariant: true
@@ -405,6 +405,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-flying",
       displayName: "Flying Silvally",
       type: Type.Flying,
       isVariant: true
@@ -412,6 +413,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-poison",
       displayName: "Poison Silvally",
       type: Type.Poison,
       isVariant: true
@@ -419,6 +421,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-ground",
       displayName: "Ground Silvally",
       type: Type.Ground,
       isVariant: true
@@ -426,6 +429,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-rock",
       displayName: "Rock Silvally",
       type: Type.Rock,
       isVariant: true
@@ -433,6 +437,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-bug",
       displayName: "Bug Silvally",
       type: Type.Bug,
       isVariant: true
@@ -440,6 +445,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-ghost",
       displayName: "Ghost Silvally",
       type: Type.Ghost,
       isVariant: true
@@ -447,6 +453,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-steel",
       displayName: "Steel Silvally",
       type: Type.Steel,
       isVariant: true
@@ -454,6 +461,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-fire",
       displayName: "Fire Silvally",
       type: Type.Fire,
       isVariant: true
@@ -461,6 +469,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-water",
       displayName: "Water Silvally",
       type: Type.Water,
       isVariant: true
@@ -468,6 +477,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-grass",
       displayName: "Grass Silvally",
       type: Type.Grass,
       isVariant: true
@@ -475,6 +485,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-electric",
       displayName: "Electric Silvally",
       type: Type.Electric,
       isVariant: true
@@ -482,6 +493,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-psychic",
       displayName: "Psychic Silvally",
       type: Type.Psychic,
       isVariant: true
@@ -489,6 +501,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-ice",
       displayName: "Ice Silvally",
       type: Type.Ice,
       isVariant: true
@@ -496,6 +509,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-dragon",
       displayName: "Dragon Silvally",
       type: Type.Dragon,
       isVariant: true
@@ -503,6 +517,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-dark",
       displayName: "Dark Silvally",
       type: Type.Dark,
       isVariant: true
@@ -510,6 +525,7 @@ export const pgen7: Generation = {
     {
       dex: 773,
       name: "silvally",
+      img: "silvally-fairy",
       displayName: "Fairy Silvally",
       type: Type.Fairy,
       isVariant: true
@@ -519,23 +535,7 @@ export const pgen7: Generation = {
       name: "minior",
       displayName: "Minior",
       type: Type.Rock,
-      type2: Type.Flying,
-      variants: [
-        "Red Meteor Minior",
-        "Orange Meteor Minior",
-        "Yellow Meteor Minior",
-        "Green Meteor Minior",
-        "Blue Meteor Minior",
-        "Indigo Meteor Minior",
-        "Violet Meteor Minior",
-        "Red Core Minior",
-        "Orange Core Minior",
-        "Yellow Core Minior",
-        "Green Core Minior",
-        "Blue Core Minior",
-        "Indigo Core Minior",
-        "Violet Core Minior"
-      ]
+      type2: Type.Flying
     },
     {
       dex: 775,
@@ -562,8 +562,7 @@ export const pgen7: Generation = {
       name: "mimikyu",
       displayName: "Mimikyu",
       type: Type.Ghost,
-      type2: Type.Fairy,
-      variants: ["Disguised Form Mimikyu", "Busted Form Mimikyu"]
+      type2: Type.Fairy
     },
     {
       dex: 779,
@@ -577,8 +576,16 @@ export const pgen7: Generation = {
       name: "drampa",
       displayName: "Drampa",
       type: Type.Normal,
+      type2: Type.Dragon
+    },
+    {
+      dex: 780,
+      name: "drampa",
+      img: "drampa-mega",
+      displayName: "Mega Drampa",
+      type: Type.Normal,
       type2: Type.Dragon,
-      variants: ["Mega Drampa"]
+      isVariant: true
     },
     {
       dex: 781,
@@ -734,6 +741,7 @@ export const pgen7: Generation = {
     {
       dex: 800,
       name: "necrozma",
+      img: "necrozma-duskmane",
       displayName: "Dusk Mane Necrozma",
       type: Type.Psychic,
       type2: Type.Steel,
@@ -742,6 +750,7 @@ export const pgen7: Generation = {
     {
       dex: 800,
       name: "necrozma",
+      img: "necrozma-dawnwings",
       displayName: "Dawn Wings Necrozma",
       type: Type.Psychic,
       type2: Type.Ghost,
@@ -750,6 +759,7 @@ export const pgen7: Generation = {
     {
       dex: 800,
       name: "necrozma",
+      img: "necrozma-ultra",
       displayName: "Ultra Necrozma",
       type: Type.Psychic,
       type2: Type.Dragon,
@@ -821,8 +831,15 @@ export const pgen7: Generation = {
       name: "melmetal",
       displayName: "Melmetal",
       type: Type.Steel,
-      variants: ["Gigantamax Melmetal"],
       category: PokemonCategory.Mythical
+    },
+    {
+      dex: 809,
+      name: "melmetal",
+      img: "melmetal-gmax",
+      displayName: "Gigantamax Melmetal",
+      type: Type.Steel,
+      isVariant: true
     }
   ]
 };

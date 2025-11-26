@@ -20,8 +20,15 @@ export const pgen8: Generation = {
       dex: 812,
       name: "rillaboom",
       displayName: "Rillaboom",
+      type: Type.Grass
+    },
+    {
+      dex: 812,
+      name: "rillaboom",
+      img: "rillaboom-gmax",
+      displayName: "Gigantamax Rillaboom",
       type: Type.Grass,
-      variants: ["Gigantamax Rillaboom"]
+      isVariant: true
     },
     {
       dex: 813,
@@ -39,8 +46,15 @@ export const pgen8: Generation = {
       dex: 815,
       name: "cinderace",
       displayName: "Cinderace",
+      type: Type.Fire
+    },
+    {
+      dex: 815,
+      name: "cinderace",
+      img: "cinderace-gmax",
+      displayName: "Gigantamax Cinderace",
       type: Type.Fire,
-      variants: ["Gigantamax Cinderace"]
+      isVariant: true
     },
     {
       dex: 816,
@@ -58,8 +72,15 @@ export const pgen8: Generation = {
       dex: 818,
       name: "inteleon",
       displayName: "Inteleon",
+      type: Type.Water
+    },
+    {
+      dex: 818,
+      name: "inteleon",
+      img: "inteleon-gmax",
+      displayName: "Gigantamax Inteleon",
       type: Type.Water,
-      variants: ["Gigantamax Inteleon"]
+      isVariant: true
     },
     {
       dex: 819,
@@ -90,8 +111,16 @@ export const pgen8: Generation = {
       name: "corviknight",
       displayName: "Corviknight",
       type: Type.Flying,
+      type2: Type.Steel
+    },
+    {
+      dex: 823,
+      name: "corviknight",
+      img: "corviknight-gmax",
+      displayName: "Gigantamax Corviknight",
+      type: Type.Flying,
       type2: Type.Steel,
-      variants: ["Gigantamax Corviknight"]
+      isVariant: true
     },
     {
       dex: 824,
@@ -111,8 +140,16 @@ export const pgen8: Generation = {
       name: "orbeetle",
       displayName: "Orbeetle",
       type: Type.Bug,
+      type2: Type.Psychic
+    },
+    {
+      dex: 826,
+      name: "orbeetle",
+      img: "orbeetle-gmax",
+      displayName: "Gigantamax Orbeetle",
+      type: Type.Bug,
       type2: Type.Psychic,
-      variants: ["Gigantamax Orbeetle"]
+      isVariant: true
     },
     {
       dex: 827,
@@ -161,8 +198,16 @@ export const pgen8: Generation = {
       name: "drednaw",
       displayName: "Drednaw",
       type: Type.Water,
+      type2: Type.Rock
+    },
+    {
+      dex: 834,
+      name: "drednaw",
+      img: "drednaw-gmax",
+      displayName: "Gigantamax Drednaw",
+      type: Type.Water,
       type2: Type.Rock,
-      variants: ["Gigantamax Drednaw"]
+      isVariant: true
     },
     {
       dex: 835,
@@ -194,8 +239,16 @@ export const pgen8: Generation = {
       name: "coalossal",
       displayName: "Coalossal",
       type: Type.Rock,
+      type2: Type.Fire
+    },
+    {
+      dex: 839,
+      name: "coalossal",
+      img: "coalossal-gmax",
+      displayName: "Gigantamax Coalossal",
+      type: Type.Rock,
       type2: Type.Fire,
-      variants: ["Gigantamax Coalossal"]
+      isVariant: true
     },
     {
       dex: 840,
@@ -209,16 +262,32 @@ export const pgen8: Generation = {
       name: "flapple",
       displayName: "Flapple",
       type: Type.Grass,
+      type2: Type.Dragon
+    },
+    {
+      dex: 841,
+      name: "flapple",
+      img: "flapple-gmax",
+      displayName: "Gigantamax Flapple",
+      type: Type.Grass,
       type2: Type.Dragon,
-      variants: ["Gigantamax Flapple"]
+      isVariant: true
     },
     {
       dex: 842,
       name: "appletun",
       displayName: "Appletun",
       type: Type.Grass,
+      type2: Type.Dragon
+    },
+    {
+      dex: 842,
+      name: "appletun",
+      img: "appletun-gmax",
+      displayName: "Gigantamax Appletun",
+      type: Type.Grass,
       type2: Type.Dragon,
-      variants: ["Gigantamax Appletun"]
+      isVariant: true
     },
     {
       dex: 843,
@@ -230,16 +299,22 @@ export const pgen8: Generation = {
       dex: 844,
       name: "sandaconda",
       displayName: "Sandaconda",
+      type: Type.Ground
+    },
+    {
+      dex: 844,
+      name: "sandaconda",
+      img: "sandaconda-gmax",
+      displayName: "Gigantamax Sandaconda",
       type: Type.Ground,
-      variants: ["Gigantamax Sandaconda"]
+      isVariant: true
     },
     {
       dex: 845,
       name: "cramorant",
       displayName: "Cramorant",
       type: Type.Flying,
-      type2: Type.Water,
-      variants: ["Gulping Form Cramorant", "Gorging Form Cramorant"]
+      type2: Type.Water
     },
     {
       dex: 846,
@@ -266,12 +341,16 @@ export const pgen8: Generation = {
       name: "toxtricity",
       displayName: "Toxtricity",
       type: Type.Electric,
+      type2: Type.Poison
+    },
+    {
+      dex: 849,
+      name: "toxtricity",
+      img: "toxtricity-gmax",
+      displayName: "Gigantamax Toxtricity",
+      type: Type.Electric,
       type2: Type.Poison,
-      variants: [
-        "Amped Form Toxtricity",
-        "Low Key Form Toxtricity",
-        "Gigantamax Toxtricity"
-      ]
+      isVariant: true
     },
     {
       dex: 850,
@@ -285,8 +364,16 @@ export const pgen8: Generation = {
       name: "centiskorch",
       displayName: "Centiskorch",
       type: Type.Fire,
+      type2: Type.Bug
+    },
+    {
+      dex: 851,
+      name: "centiskorch",
+      img: "centiskorch-gmax",
+      displayName: "Gigantamax Centiskorch",
+      type: Type.Fire,
       type2: Type.Bug,
-      variants: ["Gigantamax Centiskorch"]
+      isVariant: true
     },
     {
       dex: 852,
@@ -304,15 +391,13 @@ export const pgen8: Generation = {
       dex: 854,
       name: "sinistea",
       displayName: "Sinistea",
-      type: Type.Ghost,
-      variants: ["Phony Form Sinistea", "Antique Form Sinistea"]
+      type: Type.Ghost
     },
     {
       dex: 855,
       name: "polteageist",
       displayName: "Polteageist",
-      type: Type.Ghost,
-      variants: ["Phony Form Polteageist", "Antique Form Polteageist"]
+      type: Type.Ghost
     },
     {
       dex: 856,
@@ -331,8 +416,16 @@ export const pgen8: Generation = {
       name: "hatterene",
       displayName: "Hatterene",
       type: Type.Psychic,
+      type2: Type.Fairy
+    },
+    {
+      dex: 858,
+      name: "hatterene",
+      img: "hatterene-gmax",
+      displayName: "Gigantamax Hatterene",
+      type: Type.Psychic,
       type2: Type.Fairy,
-      variants: ["Gigantamax Hatterene"]
+      isVariant: true
     },
     {
       dex: 859,
@@ -353,8 +446,16 @@ export const pgen8: Generation = {
       name: "grimmsnarl",
       displayName: "Grimmsnarl",
       type: Type.Dark,
+      type2: Type.Fairy
+    },
+    {
+      dex: 861,
+      name: "grimmsnarl",
+      img: "grimmsnarl-gmax",
+      displayName: "Gigantamax Grimmsnarl",
+      type: Type.Dark,
       type2: Type.Fairy,
-      variants: ["Gigantamax Grimmsnarl"]
+      isVariant: true
     },
     {
       dex: 862,
@@ -399,22 +500,43 @@ export const pgen8: Generation = {
       dex: 868,
       name: "milcery",
       displayName: "Milcery",
+      type: Type.Fairy
+    },
+    {
+      dex: 868,
+      name: "milcery",
+      img: "milcery-gmax",
+      displayName: "Gigantamax Milcery",
       type: Type.Fairy,
-      variants: ["Gigantamax Milcery"]
+      isVariant: true
     },
     {
       dex: 869,
       name: "alcremie",
       displayName: "Alcremie",
+      type: Type.Fairy
+    },
+    {
+      dex: 869,
+      name: "alcremie",
+      img: "alcremie-gmax",
+      displayName: "Gigantamax Alcremie",
       type: Type.Fairy,
-      variants: ["Gigantamax Alcremie"]
+      isVariant: true
     },
     {
       dex: 870,
       name: "falinks",
       displayName: "Falinks",
+      type: Type.Fighting
+    },
+    {
+      dex: 870,
+      name: "falinks",
+      img: "falinks-gmax",
+      displayName: "Gigantamax Falinks",
       type: Type.Fighting,
-      variants: ["Mega Falinks"]
+      isVariant: true
     },
     {
       dex: 871,
@@ -453,16 +575,14 @@ export const pgen8: Generation = {
       name: "indeedee",
       displayName: "Indeedee",
       type: Type.Psychic,
-      type2: Type.Normal,
-      variants: ["Male Indeedee", "Female Indeedee"]
+      type2: Type.Normal
     },
     {
       dex: 877,
       name: "morpeko",
       displayName: "Morpeko",
       type: Type.Electric,
-      type2: Type.Dark,
-      variants: ["Full Belly Mode Morpeko", "Hangry Mode Morpeko"]
+      type2: Type.Dark
     },
     {
       dex: 878,
@@ -474,8 +594,15 @@ export const pgen8: Generation = {
       dex: 879,
       name: "copperajah",
       displayName: "Copperajah",
+      type: Type.Steel
+    },
+    {
+      dex: 879,
+      name: "copperajah",
+      img: "copperajah-gmax",
+      displayName: "Gigantamax Copperajah",
       type: Type.Steel,
-      variants: ["Gigantamax Copperajah"]
+      isVariant: true
     },
     {
       dex: 880,
@@ -514,8 +641,16 @@ export const pgen8: Generation = {
       name: "duraludon",
       displayName: "Duraludon",
       type: Type.Steel,
+      type2: Type.Dragon
+    },
+    {
+      dex: 884,
+      name: "duraludon",
+      img: "duraludon-gmax",
+      displayName: "Gigantamax Duraludon",
+      type: Type.Steel,
       type2: Type.Dragon,
-      variants: ["Gigantamax Duraludon"]
+      isVariant: true
     },
     {
       dex: 885,
@@ -543,12 +678,20 @@ export const pgen8: Generation = {
       name: "zacian",
       displayName: "Zacian",
       type: Type.Fairy,
-      variants: ["Hero of Many Battles Zacian"],
+      noDefaultForm: true,
       category: PokemonCategory.Legendary
     },
     {
       dex: 888,
       name: "zacian",
+      displayName: "Hero of Many Battles Zacian",
+      type: Type.Fairy,
+      isVariant: true
+    },
+    {
+      dex: 888,
+      name: "zacian",
+      img: "zacian-crowned",
       displayName: "Crowned Sword Zacian",
       type: Type.Fairy,
       type2: Type.Steel,
@@ -559,12 +702,20 @@ export const pgen8: Generation = {
       name: "zamazenta",
       displayName: "Zamazenta",
       type: Type.Fighting,
-      variants: ["Hero of Many Battles Zamazenta"],
+      noDefaultForm: true,
       category: PokemonCategory.Legendary
     },
     {
       dex: 889,
       name: "zamazenta",
+      displayName: "Hero of Many Battles Zamazenta",
+      type: Type.Fighting,
+      isVariant: true
+    },
+    {
+      dex: 889,
+      name: "zamazenta",
+      img: "zamazenta-crowned",
       displayName: "Crowned Shield Zamazenta",
       type: Type.Fighting,
       type2: Type.Steel,
@@ -576,8 +727,16 @@ export const pgen8: Generation = {
       displayName: "Eternatus",
       type: Type.Poison,
       type2: Type.Dragon,
-      category: PokemonCategory.Legendary,
-      variants: ["Eternamax Eternatus"]
+      category: PokemonCategory.Legendary
+    },
+    {
+      dex: 890,
+      name: "eternatus",
+      img: "eternatus-eternamax",
+      displayName: "Eternamax Eternatus",
+      type: Type.Poison,
+      type2: Type.Dragon,
+      isVariant: true
     },
     {
       dex: 891,
@@ -589,6 +748,7 @@ export const pgen8: Generation = {
     {
       dex: 892,
       name: "urshifu",
+      img: "urshifu-singlestrike",
       displayName: "Urshifu",
       type: Type.Fighting,
       type2: Type.Varies,
@@ -598,19 +758,37 @@ export const pgen8: Generation = {
     {
       dex: 892,
       name: "urshifu",
+      img: "urshifu-singlestrike",
       displayName: "Single Strike Style Urshifu",
       type: Type.Fighting,
       type2: Type.Dark,
-      variants: ["Gigantamax Single Strike Style Urshifu"],
       isVariant: true
     },
     {
       dex: 892,
       name: "urshifu",
+      img: "urshifu-singlegmax",
+      displayName: "Gigantamax Single Strike Style Urshifu",
+      type: Type.Fighting,
+      type2: Type.Dark,
+      isVariant: true
+    },
+    {
+      dex: 892,
+      name: "urshifu",
+      img: "urshifu-rapidstrike",
       displayName: "Rapid Strike Style Urshifu",
       type: Type.Fighting,
       type2: Type.Water,
-      variants: ["Gigantamax Rapid Strike Style Urshifu"],
+      isVariant: true
+    },
+    {
+      dex: 892,
+      name: "urshifu",
+      img: "urshifu-rapidgmax",
+      displayName: "Gigantamax Rapid Strike Style Urshifu",
+      type: Type.Fighting,
+      type2: Type.Water,
       isVariant: true
     },
     {
@@ -619,7 +797,6 @@ export const pgen8: Generation = {
       displayName: "Zarude",
       type: Type.Dark,
       type2: Type.Grass,
-      variants: ["Dada Zarude"],
       category: PokemonCategory.Mythical
     },
     {
@@ -693,16 +870,14 @@ export const pgen8: Generation = {
       name: "ursaluna",
       displayName: "Ursaluna",
       type: Type.Ground,
-      type2: Type.Normal,
-      variants: ["Blood Moon Ursaluna"]
+      type2: Type.Normal
     },
     {
       dex: 902,
       name: "basculegion",
       displayName: "Basculegion",
       type: Type.Water,
-      type2: Type.Ghost,
-      variants: ["Male Basculegion", "Female Basculegion"]
+      type2: Type.Ghost
     },
     {
       dex: 903,
@@ -724,7 +899,6 @@ export const pgen8: Generation = {
       displayName: "Enamorus",
       type: Type.Fairy,
       type2: Type.Flying,
-      variants: ["Incarnate Forme Enamorus", "Therian Forme Enamorus"],
       category: PokemonCategory.Legendary
     }
   ]

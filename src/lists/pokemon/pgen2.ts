@@ -25,6 +25,7 @@ export const pgen2: Generation = {
     {
       dex: 154,
       name: "meganium",
+      img: "meganium-mega",
       displayName: "Mega Meganium",
       type: Type.Grass,
       type2: Type.Fairy,
@@ -51,6 +52,7 @@ export const pgen2: Generation = {
     {
       dex: 157,
       name: "typhlosion",
+      img: "typhlosion-hisuian",
       displayName: "Hisuian Typhlosion",
       type: Type.Fire,
       type2: Type.Ghost,
@@ -77,6 +79,7 @@ export const pgen2: Generation = {
     {
       dex: 160,
       name: "feraligatr",
+      img: "feraligatr-mega",
       displayName: "Mega Feraligatr",
       type: Type.Water,
       type2: Type.Dragon,
@@ -228,6 +231,7 @@ export const pgen2: Generation = {
     {
       dex: 181,
       name: "ampharos",
+      img: "ampharos-mega",
       displayName: "Mega Ampharos",
       type: Type.Electric,
       type2: Type.Dragon,
@@ -321,6 +325,7 @@ export const pgen2: Generation = {
     {
       dex: 194,
       name: "wooper",
+      img: "wooper-paldean",
       displayName: "Paldean Wooper",
       type: Type.Poison,
       type2: Type.Ground,
@@ -362,6 +367,7 @@ export const pgen2: Generation = {
     {
       dex: 199,
       name: "slowking",
+      img: "slowking-galarian",
       displayName: "Galarian Slowking",
       type: Type.Poison,
       type2: Type.Psychic,
@@ -423,8 +429,16 @@ export const pgen2: Generation = {
       name: "steelix",
       displayName: "Steelix",
       type: Type.Steel,
+      type2: Type.Ground
+    },
+    {
+      dex: 208,
+      name: "steelix",
+      img: "steelix-mega",
+      displayName: "Mega Steelix",
+      type: Type.Steel,
       type2: Type.Ground,
-      variants: ["Mega Steelix"]
+      isVariant: true
     },
     {
       dex: 209,
@@ -448,6 +462,7 @@ export const pgen2: Generation = {
     {
       dex: 211,
       name: "qwilfish",
+      img: "qwilfish-hisuian",
       displayName: "Hisuian Qwilfish",
       type: Type.Dark,
       type2: Type.Poison,
@@ -458,8 +473,16 @@ export const pgen2: Generation = {
       name: "scizor",
       displayName: "Scizor",
       type: Type.Bug,
+      type2: Type.Steel
+    },
+    {
+      dex: 212,
+      name: "scizor",
+      img: "scizor-mega",
+      displayName: "Mega Scizor",
+      type: Type.Bug,
       type2: Type.Steel,
-      variants: ["Mega Scizor"]
+      isVariant: true
     },
     {
       dex: 213,
@@ -473,8 +496,16 @@ export const pgen2: Generation = {
       name: "heracross",
       displayName: "Heracross",
       type: Type.Bug,
+      type2: Type.Fighting
+    },
+    {
+      dex: 214,
+      name: "heracross",
+      img: "heracross-mega",
+      displayName: "Mega Heracross",
+      type: Type.Bug,
       type2: Type.Fighting,
-      variants: ["Mega Heracross"]
+      isVariant: true
     },
     {
       dex: 215,
@@ -486,6 +517,7 @@ export const pgen2: Generation = {
     {
       dex: 215,
       name: "sneasel",
+      img: "sneasel-hisuian",
       displayName: "Hisuian Sneasel",
       type: Type.Fighting,
       type2: Type.Poison,
@@ -540,6 +572,7 @@ export const pgen2: Generation = {
     {
       dex: 222,
       name: "corsola",
+      img: "corsola-galarian",
       displayName: "Galarian Corsola",
       type: Type.Ghost,
       isVariant: true
@@ -575,8 +608,16 @@ export const pgen2: Generation = {
       name: "skarmory",
       displayName: "Skarmory",
       type: Type.Steel,
+      type2: Type.Flying
+    },
+    {
+      dex: 227,
+      name: "skarmory",
+      img: "skarmory-mega",
+      displayName: "Mega Skarmory",
+      type: Type.Steel,
       type2: Type.Flying,
-      variants: ["Mega Skarmory"]
+      isVariant: true
     },
     {
       dex: 228,
@@ -590,8 +631,16 @@ export const pgen2: Generation = {
       name: "houndoom",
       displayName: "Houndoom",
       type: Type.Dark,
+      type2: Type.Fire
+    },
+    {
+      dex: 229,
+      name: "houndoom",
+      img: "houndoom-mega",
+      displayName: "Mega Houndoom",
+      type: Type.Dark,
       type2: Type.Fire,
-      variants: ["Mega Houndoom"]
+      isVariant: true
     },
     {
       dex: 230,
@@ -717,8 +766,16 @@ export const pgen2: Generation = {
       name: "tyranitar",
       displayName: "Tyranitar",
       type: Type.Rock,
+      type2: Type.Dark
+    },
+    {
+      dex: 248,
+      name: "tyranitar",
+      img: "tyranitar-mega",
+      displayName: "Mega Tyranitar",
+      type: Type.Rock,
       type2: Type.Dark,
-      variants: ["Mega Tyranitar"]
+      isVariant: true
     },
     {
       dex: 249,

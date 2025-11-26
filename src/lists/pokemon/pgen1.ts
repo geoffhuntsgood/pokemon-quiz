@@ -23,8 +23,25 @@ export const pgen1: Generation = {
       name: "venusaur",
       displayName: "Venusaur",
       type: Type.Grass,
+      type2: Type.Poison
+    },
+    {
+      dex: 3,
+      name: "venusaur",
+      img: "venusaur-mega",
+      displayName: "Mega Venusaur",
+      type: Type.Grass,
       type2: Type.Poison,
-      variants: ["Mega Venusaur", "Gigantamax Venusaur"]
+      isVariant: true
+    },
+    {
+      dex: 3,
+      name: "venusaur",
+      img: "venusaur-gmax",
+      displayName: "Gigantamax Venusaur",
+      type: Type.Grass,
+      type2: Type.Poison,
+      isVariant: true
     },
     {
       dex: 4,
@@ -43,15 +60,33 @@ export const pgen1: Generation = {
       name: "charizard",
       displayName: "Charizard",
       type: Type.Fire,
-      type2: Type.Flying,
-      variants: ["Mega Charizard Y, Gigantamax Charizard"]
+      type2: Type.Flying
     },
     {
       dex: 6,
       name: "charizard",
+      img: "charizard-megax",
       displayName: "Mega Charizard X",
       type: Type.Fire,
       type2: Type.Dragon,
+      isVariant: true
+    },
+    {
+      dex: 6,
+      name: "charizard",
+      img: "charizard-megay",
+      displayName: "Mega Charizard Y",
+      type: Type.Fire,
+      type2: Type.Flying,
+      isVariant: true
+    },
+    {
+      dex: 6,
+      name: "charizard",
+      img: "charizard-gmax",
+      displayName: "Gigantamax Charizard",
+      type: Type.Fire,
+      type2: Type.Flying,
       isVariant: true
     },
     {
@@ -70,8 +105,23 @@ export const pgen1: Generation = {
       dex: 9,
       name: "blastoise",
       displayName: "Blastoise",
+      type: Type.Water
+    },
+    {
+      dex: 9,
+      name: "blastoise",
+      img: "blastoise-mega",
+      displayName: "Mega Blastoise",
       type: Type.Water,
-      variants: ["Mega Blastoise", "Gigantamax Blastoise"]
+      isVariant: true
+    },
+    {
+      dex: 9,
+      name: "blastoise",
+      img: "blastoise-gmax",
+      displayName: "Gigantamax Blastoise",
+      type: Type.Water,
+      isVariant: true
     },
     {
       dex: 10,
@@ -90,8 +140,16 @@ export const pgen1: Generation = {
       name: "butterfree",
       displayName: "Butterfree",
       type: Type.Bug,
+      type2: Type.Flying
+    },
+    {
+      dex: 12,
+      name: "butterfree",
+      img: "butterfree-gmax",
+      displayName: "Gigantamax Butterfree",
+      type: Type.Bug,
       type2: Type.Flying,
-      variants: ["Gigantamax Butterfree"]
+      isVariant: true
     },
     {
       dex: 13,
@@ -112,8 +170,16 @@ export const pgen1: Generation = {
       name: "beedrill",
       displayName: "Beedrill",
       type: Type.Bug,
+      type2: Type.Poison
+    },
+    {
+      dex: 15,
+      name: "beedrill",
+      img: "beedrill-mega",
+      displayName: "Mega Beedrill",
+      type: Type.Bug,
       type2: Type.Poison,
-      variants: ["Mega Beedrill"]
+      isVariant: true
     },
     {
       dex: 16,
@@ -134,8 +200,16 @@ export const pgen1: Generation = {
       name: "pidgeot",
       displayName: "Pidgeot",
       type: Type.Normal,
+      type2: Type.Flying
+    },
+    {
+      dex: 18,
+      name: "pidgeot",
+      img: "pidgeot-mega",
+      displayName: "Mega Pidgeot",
+      type: Type.Normal,
       type2: Type.Flying,
-      variants: ["Mega Pidgeot"]
+      isVariant: true
     },
     {
       dex: 19,
@@ -146,6 +220,7 @@ export const pgen1: Generation = {
     {
       dex: 19,
       name: "rattata",
+      img: "rattata-alolan",
       displayName: "Alolan Rattata",
       type: Type.Normal,
       type2: Type.Dark,
@@ -160,6 +235,7 @@ export const pgen1: Generation = {
     {
       dex: 20,
       name: "raticate",
+      img: "raticate-alolan",
       displayName: "Alolan Raticate",
       type: Type.Normal,
       type2: Type.Dark,
@@ -195,8 +271,15 @@ export const pgen1: Generation = {
       dex: 25,
       name: "pikachu",
       displayName: "Pikachu",
+      type: Type.Electric
+    },
+    {
+      dex: 25,
+      name: "pikachu",
+      img: "pikachu-gmax",
+      displayName: "Gigantamax Pikachu",
       type: Type.Electric,
-      variants: ["Gigantamax Pikachu"]
+      isVariant: true
     },
     {
       dex: 26,
@@ -207,6 +290,7 @@ export const pgen1: Generation = {
     {
       dex: 26,
       name: "raichu",
+      img: "raichu-alolan",
       displayName: "Alolan Raichu",
       type: Type.Electric,
       type2: Type.Psychic,
@@ -221,6 +305,7 @@ export const pgen1: Generation = {
     {
       dex: 27,
       name: "sandshrew",
+      img: "sandshrew-alolan",
       displayName: "Alolan Sandshrew",
       type: Type.Ice,
       type2: Type.Steel,
@@ -235,6 +320,7 @@ export const pgen1: Generation = {
     {
       dex: 28,
       name: "sandslash",
+      img: "sandslash-alolan",
       displayName: "Alolan Sandslash",
       type: Type.Ice,
       type2: Type.Steel,
@@ -243,6 +329,7 @@ export const pgen1: Generation = {
     {
       dex: 29,
       name: "nidoran",
+      img: "nidoranf",
       displayName: "Nidoran♀",
       type: Type.Poison
     },
@@ -262,6 +349,7 @@ export const pgen1: Generation = {
     {
       dex: 32,
       name: "nidoran",
+      img: "nidoranm",
       displayName: "Nidoran♂",
       type: Type.Poison
     },
@@ -293,6 +381,7 @@ export const pgen1: Generation = {
     {
       dex: 36,
       name: "clefable",
+      img: "clefable-mega",
       displayName: "Mega Clefable",
       type: Type.Fairy,
       type2: Type.Flying,
@@ -307,6 +396,7 @@ export const pgen1: Generation = {
     {
       dex: 37,
       name: "vulpix",
+      img: "vulpix-alolan",
       displayName: "Alolan Vulpix",
       type: Type.Ice,
       isVariant: true
@@ -320,6 +410,7 @@ export const pgen1: Generation = {
     {
       dex: 38,
       name: "ninetales",
+      img: "ninetales-alolan",
       displayName: "Alolan Ninetales",
       type: Type.Ice,
       type2: Type.Fairy,
@@ -411,6 +502,7 @@ export const pgen1: Generation = {
     {
       dex: 50,
       name: "diglett",
+      img: "diglett-alolan",
       displayName: "Alolan Diglett",
       type: Type.Ground,
       type2: Type.Steel,
@@ -425,6 +517,7 @@ export const pgen1: Generation = {
     {
       dex: 51,
       name: "dugtrio",
+      img: "dugtrio-alolan",
       displayName: "Alolan Dugtrio",
       type: Type.Ground,
       type2: Type.Steel,
@@ -434,12 +527,12 @@ export const pgen1: Generation = {
       dex: 52,
       name: "meowth",
       displayName: "Meowth",
-      type: Type.Normal,
-      variants: ["Gigantamax Meowth"]
+      type: Type.Normal
     },
     {
       dex: 52,
       name: "meowth",
+      img: "meowth-alolan",
       displayName: "Alolan Meowth",
       type: Type.Dark,
       isVariant: true
@@ -447,8 +540,17 @@ export const pgen1: Generation = {
     {
       dex: 52,
       name: "meowth",
+      img: "meowth-galarian",
       displayName: "Galarian Meowth",
       type: Type.Steel,
+      isVariant: true
+    },
+    {
+      dex: 52,
+      name: "meowth",
+      img: "meowth-gmax",
+      displayName: "Gigantamax Meowth",
+      type: Type.Normal,
       isVariant: true
     },
     {
@@ -460,6 +562,7 @@ export const pgen1: Generation = {
     {
       dex: 53,
       name: "persian",
+      img: "persian-alolan",
       displayName: "Alolan Persian",
       type: Type.Dark,
       isVariant: true
@@ -497,6 +600,7 @@ export const pgen1: Generation = {
     {
       dex: 58,
       name: "growlithe",
+      img: "growlithe-hisuian",
       displayName: "Hisuian Growlithe",
       type: Type.Fire,
       type2: Type.Rock,
@@ -511,6 +615,7 @@ export const pgen1: Generation = {
     {
       dex: 59,
       name: "arcanine",
+      img: "arcanine-hisuian",
       displayName: "Hisuian Arcanine",
       type: Type.Fire,
       type2: Type.Rock,
@@ -551,8 +656,15 @@ export const pgen1: Generation = {
       dex: 65,
       name: "alakazam",
       displayName: "Alakazam",
+      type: Type.Psychic
+    },
+    {
+      dex: 65,
+      name: "alakazam",
+      img: "alakazam-mega",
+      displayName: "Mega Alakazam",
       type: Type.Psychic,
-      variants: ["Mega Alakazam"]
+      isVariant: true
     },
     {
       dex: 66,
@@ -570,8 +682,15 @@ export const pgen1: Generation = {
       dex: 68,
       name: "machamp",
       displayName: "Machamp",
+      type: Type.Fighting
+    },
+    {
+      dex: 68,
+      name: "machamp",
+      img: "machamp-gmax",
+      displayName: "Gigantamax Machamp",
       type: Type.Fighting,
-      variants: ["Gigantamax Machamp"]
+      isVariant: true
     },
     {
       dex: 69,
@@ -592,8 +711,16 @@ export const pgen1: Generation = {
       name: "victreebel",
       displayName: "Victreebel",
       type: Type.Grass,
+      type2: Type.Poison
+    },
+    {
+      dex: 71,
+      name: "victreebel",
+      img: "victreebel-mega",
+      displayName: "Mega Victreebel",
+      type: Type.Grass,
       type2: Type.Poison,
-      variants: ["Mega Victreebel"]
+      isVariant: true
     },
     {
       dex: 72,
@@ -619,6 +746,7 @@ export const pgen1: Generation = {
     {
       dex: 74,
       name: "geodude",
+      img: "geodude-alolan",
       displayName: "Alolan Geodude",
       type: Type.Rock,
       type2: Type.Electric,
@@ -634,6 +762,7 @@ export const pgen1: Generation = {
     {
       dex: 75,
       name: "graveler",
+      img: "graveler-alolan",
       displayName: "Alolan Graveler",
       type: Type.Rock,
       type2: Type.Electric,
@@ -649,6 +778,7 @@ export const pgen1: Generation = {
     {
       dex: 76,
       name: "golem",
+      img: "golem-alolan",
       displayName: "Alolan Golem",
       type: Type.Rock,
       type2: Type.Electric,
@@ -663,6 +793,7 @@ export const pgen1: Generation = {
     {
       dex: 77,
       name: "ponyta",
+      img: "ponyta-galarian",
       displayName: "Galarian Ponyta",
       type: Type.Psychic,
       isVariant: true
@@ -676,6 +807,7 @@ export const pgen1: Generation = {
     {
       dex: 78,
       name: "rapidash",
+      img: "rapidash-galarian",
       displayName: "Galarian Rapidash",
       type: Type.Psychic,
       type2: Type.Fairy,
@@ -691,6 +823,7 @@ export const pgen1: Generation = {
     {
       dex: 79,
       name: "slowpoke",
+      img: "slowpoke-galarian",
       displayName: "Galarian Slowpoke",
       type: Type.Psychic,
       isVariant: true
@@ -700,12 +833,21 @@ export const pgen1: Generation = {
       name: "slowbro",
       displayName: "Slowbro",
       type: Type.Water,
-      type2: Type.Psychic,
-      variants: ["Mega Slowbro"]
+      type2: Type.Psychic
     },
     {
       dex: 80,
       name: "slowbro",
+      img: "slowbro-mega",
+      displayName: "Mega Slowbro",
+      type: Type.Water,
+      type2: Type.Psychic,
+      isVariant: true
+    },
+    {
+      dex: 80,
+      name: "slowbro",
+      img: "slowbro-galarian",
       displayName: "Galarian Slowbro",
       type: Type.Poison,
       type2: Type.Psychic,
@@ -735,6 +877,7 @@ export const pgen1: Generation = {
     {
       dex: 83,
       name: "farfetchd",
+      img: "farfetchd-galarian",
       displayName: "Galarian Farfetch'd",
       type: Type.Fighting,
       isVariant: true
@@ -775,6 +918,7 @@ export const pgen1: Generation = {
     {
       dex: 88,
       name: "grimer",
+      img: "grimer-alolan",
       displayName: "Alolan Grimer",
       type: Type.Poison,
       type2: Type.Dark,
@@ -789,6 +933,7 @@ export const pgen1: Generation = {
     {
       dex: 89,
       name: "muk",
+      img: "muk-alolan",
       displayName: "Alolan Muk",
       type: Type.Poison,
       type2: Type.Dark,
@@ -826,8 +971,25 @@ export const pgen1: Generation = {
       name: "gengar",
       displayName: "Gengar",
       type: Type.Ghost,
+      type2: Type.Poison
+    },
+    {
+      dex: 94,
+      name: "gengar",
+      img: "gengar-mega",
+      displayName: "Mega Gengar",
+      type: Type.Ghost,
       type2: Type.Poison,
-      variants: ["Mega Gengar", "Gigantamax Gengar"]
+      isVariant: true
+    },
+    {
+      dex: 94,
+      name: "gengar",
+      img: "gengar-gmax",
+      displayName: "Gigantamax Gengar",
+      type: Type.Ghost,
+      type2: Type.Poison,
+      isVariant: true
     },
     {
       dex: 95,
@@ -858,8 +1020,15 @@ export const pgen1: Generation = {
       dex: 99,
       name: "kingler",
       displayName: "Kingler",
+      type: Type.Water
+    },
+    {
+      dex: 99,
+      name: "kingler",
+      img: "kingler-gmax",
+      displayName: "Gigantamax Kingler",
       type: Type.Water,
-      variants: ["Gigantamax Kingler"]
+      isVariant: true
     },
     {
       dex: 100,
@@ -870,6 +1039,7 @@ export const pgen1: Generation = {
     {
       dex: 100,
       name: "voltorb",
+      img: "voltorb-hisuian",
       displayName: "Hisuian Voltorb",
       type: Type.Electric,
       type2: Type.Grass,
@@ -884,6 +1054,7 @@ export const pgen1: Generation = {
     {
       dex: 101,
       name: "electrode",
+      img: "electrode-hisuian",
       displayName: "Hisuian Electrode",
       type: Type.Electric,
       type2: Type.Grass,
@@ -906,6 +1077,7 @@ export const pgen1: Generation = {
     {
       dex: 103,
       name: "exeggutor",
+      img: "exeggutor-alolan",
       displayName: "Alolan Exeggutor",
       type: Type.Grass,
       type2: Type.Dragon,
@@ -926,6 +1098,7 @@ export const pgen1: Generation = {
     {
       dex: 105,
       name: "marowak",
+      img: "marowak-alolan",
       displayName: "Alolan Marowak",
       type: Type.Fire,
       type2: Type.Ghost,
@@ -964,6 +1137,7 @@ export const pgen1: Generation = {
     {
       dex: 110,
       name: "weezing",
+      img: "weezing-galarian",
       displayName: "Galarian Weezing",
       type: Type.Poison,
       type2: Type.Fairy,
@@ -999,8 +1173,15 @@ export const pgen1: Generation = {
       dex: 115,
       name: "kangaskhan",
       displayName: "Kangaskhan",
+      type: Type.Normal
+    },
+    {
+      dex: 115,
+      name: "kangaskhan",
+      img: "kangaskhan-mega",
+      displayName: "Mega Kangaskhan",
       type: Type.Normal,
-      variants: ["Mega Kangaskhan"]
+      isVariant: true
     },
     {
       dex: 116,
@@ -1037,8 +1218,16 @@ export const pgen1: Generation = {
       name: "starmie",
       displayName: "Starmie",
       type: Type.Water,
+      type2: Type.Psychic
+    },
+    {
+      dex: 121,
+      name: "starmie",
+      img: "starmie-mega",
+      displayName: "Mega Starmie",
+      type: Type.Water,
       type2: Type.Psychic,
-      variants: ["Mega Starmie"]
+      isVariant: true
     },
     {
       dex: 122,
@@ -1050,6 +1239,7 @@ export const pgen1: Generation = {
     {
       dex: 122,
       name: "mrmime",
+      img: "mrmime-galarian",
       displayName: "Galarian Mr. Mime",
       type: Type.Ice,
       type2: Type.Psychic,
@@ -1090,6 +1280,7 @@ export const pgen1: Generation = {
     {
       dex: 127,
       name: "pinsir",
+      img: "pinsir-mega",
       displayName: "Mega Pinsir",
       type: Type.Bug,
       type2: Type.Flying,
@@ -1104,6 +1295,7 @@ export const pgen1: Generation = {
     {
       dex: 128,
       name: "tauros",
+      img: "tauros-paldean",
       displayName: "Paldean Tauros, Combat Breed",
       type: Type.Fighting,
       isVariant: true
@@ -1111,6 +1303,7 @@ export const pgen1: Generation = {
     {
       dex: 128,
       name: "tauros",
+      img: "tauros-paldeanblaze",
       displayName: "Paldean Tauros, Blaze Breed",
       type: Type.Fighting,
       type2: Type.Fire,
@@ -1119,6 +1312,7 @@ export const pgen1: Generation = {
     {
       dex: 128,
       name: "tauros",
+      img: "tauros-paldeanaqua",
       displayName: "Paldean Tauros, Aqua Breed",
       type: Type.Fighting,
       type2: Type.Water,
@@ -1140,6 +1334,7 @@ export const pgen1: Generation = {
     {
       dex: 130,
       name: "gyarados",
+      img: "gyarados-mega",
       displayName: "Mega Gyarados",
       type: Type.Water,
       type2: Type.Dark,
@@ -1150,8 +1345,16 @@ export const pgen1: Generation = {
       name: "lapras",
       displayName: "Lapras",
       type: Type.Water,
+      type2: Type.Ice
+    },
+    {
+      dex: 131,
+      name: "lapras",
+      img: "lapras-gmax",
+      displayName: "Gigantamax Lapras",
+      type: Type.Water,
       type2: Type.Ice,
-      variants: ["Gigantamax Lapras"]
+      isVariant: true
     },
     {
       dex: 132,
@@ -1163,8 +1366,15 @@ export const pgen1: Generation = {
       dex: 133,
       name: "eevee",
       displayName: "Eevee",
+      type: Type.Normal
+    },
+    {
+      dex: 133,
+      name: "eevee",
+      img: "eevee-gmax",
+      displayName: "Gigantamax Eevee",
       type: Type.Normal,
-      variants: ["Gigantamax Eevee"]
+      isVariant: true
     },
     {
       dex: 134,
@@ -1228,15 +1438,30 @@ export const pgen1: Generation = {
       displayName: "Aerodactyl",
       type: Type.Rock,
       type2: Type.Flying,
-      variants: ["Mega Aerodactyl"],
       category: PokemonCategory.Fossil
+    },
+    {
+      dex: 142,
+      name: "aerodactyl",
+      img: "aerodactyl-mega",
+      displayName: "Mega Aerodactyl",
+      type: Type.Rock,
+      type2: Type.Flying,
+      isVariant: true
     },
     {
       dex: 143,
       name: "snorlax",
       displayName: "Snorlax",
+      type: Type.Normal
+    },
+    {
+      dex: 143,
+      name: "snorlax",
+      img: "snorlax-gmax",
+      displayName: "Gigantamax Snorlax",
       type: Type.Normal,
-      variants: ["Gigantamax Snorlax"]
+      isVariant: true
     },
     {
       dex: 144,
@@ -1249,6 +1474,7 @@ export const pgen1: Generation = {
     {
       dex: 144,
       name: "articuno",
+      img: "articuno-galarian",
       displayName: "Galarian Articuno",
       type: Type.Psychic,
       type2: Type.Flying,
@@ -1266,6 +1492,7 @@ export const pgen1: Generation = {
     {
       dex: 145,
       name: "zapdos",
+      img: "zapdos-galarian",
       displayName: "Galarian Zapdos",
       type: Type.Fighting,
       type2: Type.Flying,
@@ -1283,6 +1510,7 @@ export const pgen1: Generation = {
     {
       dex: 146,
       name: "moltres",
+      img: "moltres-galarian",
       displayName: "Galarian Moltres",
       type: Type.Dark,
       type2: Type.Flying,
@@ -1306,23 +1534,39 @@ export const pgen1: Generation = {
       name: "dragonite",
       displayName: "Dragonite",
       type: Type.Dragon,
+      type2: Type.Flying
+    },
+    {
+      dex: 149,
+      name: "dragonite",
+      img: "dragonite-mega",
+      displayName: "Mega Dragonite",
+      type: Type.Dragon,
       type2: Type.Flying,
-      variants: ["Mega Dragonite"]
+      isVariant: true
     },
     {
       dex: 150,
       name: "mewtwo",
       displayName: "Mewtwo",
       type: Type.Psychic,
-      variants: ["Mega Mewtwo Y"],
       category: PokemonCategory.Legendary
     },
     {
       dex: 150,
       name: "mewtwo",
+      img: "mewtwo-megax",
       displayName: "Mega Mewtwo X",
       type: Type.Psychic,
       type2: Type.Fighting,
+      isVariant: true
+    },
+    {
+      dex: 150,
+      name: "mewtwo",
+      img: "mewtwo-megay",
+      displayName: "Mega Mewtwo Y",
+      type: Type.Psychic,
       isVariant: true
     },
     {

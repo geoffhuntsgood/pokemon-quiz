@@ -14,7 +14,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       {items.length === 0 && (
         <>
-          <PKTypography text="Pokélist: Gotta name 'em all!" />
+          <PKTypography text="Quizémon: Gotta name 'em all!" />
           <hr />
         </>
       )}

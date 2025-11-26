@@ -180,6 +180,7 @@ export const pgen4: Generation = {
     {
       dex: 413,
       name: "wormadam",
+      img: "wormadam-plant",
       displayName: "Wormadam",
       type: Type.Bug,
       type2: Type.Varies,
@@ -188,6 +189,7 @@ export const pgen4: Generation = {
     {
       dex: 413,
       name: "wormadam",
+      img: "wormadam-plant",
       displayName: "Plant Cloak Wormadam",
       type: Type.Bug,
       type2: Type.Grass,
@@ -196,6 +198,7 @@ export const pgen4: Generation = {
     {
       dex: 413,
       name: "wormadam",
+      img: "wormadam-sandy",
       displayName: "Sandy Cloak Wormadam",
       type: Type.Bug,
       type2: Type.Ground,
@@ -204,6 +207,7 @@ export const pgen4: Generation = {
     {
       dex: 413,
       name: "wormadam",
+      img: "wormadam-trash",
       displayName: "Trash Cloak Wormadam",
       type: Type.Bug,
       type2: Type.Steel,
@@ -258,23 +262,20 @@ export const pgen4: Generation = {
       dex: 421,
       name: "cherrim",
       displayName: "Cherrim",
-      type: Type.Grass,
-      variants: ["Overcast Form Cherrim", "Sunshine Form Cherrim"]
+      type: Type.Grass
     },
     {
       dex: 422,
       name: "shellos",
       displayName: "Shellos",
-      type: Type.Water,
-      variants: ["West Sea Shellos", "East Sea Shellos"]
+      type: Type.Water
     },
     {
       dex: 423,
       name: "gastrodon",
       displayName: "Gastrodon",
       type: Type.Water,
-      type2: Type.Ground,
-      variants: ["West Sea Gastrodon", "East Sea Gastrodon"]
+      type2: Type.Ground
     },
     {
       dex: 424,
@@ -311,6 +312,7 @@ export const pgen4: Generation = {
     {
       dex: 428,
       name: "lopunny",
+      img: "lopunny-mega",
       displayName: "Mega Lopunny",
       type: Type.Normal,
       type2: Type.Fighting,
@@ -431,8 +433,16 @@ export const pgen4: Generation = {
       name: "garchomp",
       displayName: "Garchomp",
       type: Type.Dragon,
+      type2: Type.Ground
+    },
+    {
+      dex: 445,
+      name: "garchomp",
+      img: "garchomp-mega",
+      displayName: "Mega Garchomp",
+      type: Type.Dragon,
       type2: Type.Ground,
-      variants: ["Mega Garchomp"]
+      isVariant: true
     },
     {
       dex: 446,
@@ -453,8 +463,16 @@ export const pgen4: Generation = {
       name: "lucario",
       displayName: "Lucario",
       type: Type.Fighting,
+      type2: Type.Steel
+    },
+    {
+      dex: 448,
+      name: "lucario",
+      img: "lucario-mega",
+      displayName: "Mega Lucario",
+      type: Type.Fighting,
       type2: Type.Steel,
-      variants: ["Mega Lucario"]
+      isVariant: true
     },
     {
       dex: 449,
@@ -534,8 +552,16 @@ export const pgen4: Generation = {
       name: "abomasnow",
       displayName: "Abomasnow",
       type: Type.Grass,
+      type2: Type.Ice
+    },
+    {
+      dex: 460,
+      name: "abomasnow",
+      img: "abomasnow-mega",
+      displayName: "Mega Abomasnow",
+      type: Type.Grass,
       type2: Type.Ice,
-      variants: ["Mega Abomasnow"]
+      isVariant: true
     },
     {
       dex: 461,
@@ -633,8 +659,16 @@ export const pgen4: Generation = {
       name: "gallade",
       displayName: "Gallade",
       type: Type.Psychic,
+      type2: Type.Fighting
+    },
+    {
+      dex: 475,
+      name: "gallade",
+      img: "gallade-mega",
+      displayName: "Mega Gallade",
+      type: Type.Psychic,
       type2: Type.Fighting,
-      variants: ["Mega Gallade"]
+      isVariant: true
     },
     {
       dex: 476,
@@ -654,8 +688,16 @@ export const pgen4: Generation = {
       name: "froslass",
       displayName: "Froslass",
       type: Type.Ice,
+      type2: Type.Ghost
+    },
+    {
+      dex: 478,
+      name: "froslass",
+      img: "froslass-mega",
+      displayName: "Mega Froslass",
+      type: Type.Ice,
       type2: Type.Ghost,
-      variants: ["Mega Froslass"]
+      isVariant: true
     },
     {
       dex: 479,
@@ -667,6 +709,7 @@ export const pgen4: Generation = {
     {
       dex: 479,
       name: "rotom",
+      img: "rotom-heat",
       displayName: "Heat Rotom",
       type: Type.Electric,
       type2: Type.Fire,
@@ -675,6 +718,7 @@ export const pgen4: Generation = {
     {
       dex: 479,
       name: "rotom",
+      img: "rotom-wash",
       displayName: "Wash Rotom",
       type: Type.Electric,
       type2: Type.Water,
@@ -683,6 +727,7 @@ export const pgen4: Generation = {
     {
       dex: 479,
       name: "rotom",
+      img: "rotom-frost",
       displayName: "Frost Rotom",
       type: Type.Electric,
       type2: Type.Ice,
@@ -691,6 +736,7 @@ export const pgen4: Generation = {
     {
       dex: 479,
       name: "rotom",
+      img: "rotom-fan",
       displayName: "Fan Rotom",
       type: Type.Electric,
       type2: Type.Flying,
@@ -699,6 +745,7 @@ export const pgen4: Generation = {
     {
       dex: 479,
       name: "rotom",
+      img: "rotom-mow",
       displayName: "Mow Rotom",
       type: Type.Electric,
       type2: Type.Grass,
@@ -731,7 +778,6 @@ export const pgen4: Generation = {
       displayName: "Dialga",
       type: Type.Steel,
       type2: Type.Dragon,
-      variants: ["Origin Forme Dialga"],
       category: PokemonCategory.Legendary
     },
     {
@@ -740,7 +786,6 @@ export const pgen4: Generation = {
       displayName: "Palkia",
       type: Type.Water,
       type2: Type.Dragon,
-      variants: ["Origin Forme Palkia"],
       category: PokemonCategory.Legendary
     },
     {
@@ -764,7 +809,6 @@ export const pgen4: Generation = {
       displayName: "Giratina",
       type: Type.Ghost,
       type2: Type.Dragon,
-      variants: ["Altered Forme Giratina", "Origin Forme Giratina"],
       category: PokemonCategory.Legendary
     },
     {
@@ -798,14 +842,24 @@ export const pgen4: Generation = {
     {
       dex: 492,
       name: "shaymin",
+      img: "shaymin-land",
       displayName: "Shaymin",
       type: Type.Grass,
-      variants: ["Land Forme Shaymin"],
+      noDefaultForm: true,
       category: PokemonCategory.Mythical
     },
     {
       dex: 492,
       name: "shaymin",
+      img: "shaymin-land",
+      displayName: "Lande Forme Shaymin",
+      type: Type.Grass,
+      isVariant: true
+    },
+    {
+      dex: 492,
+      name: "shaymin",
+      img: "shaymin-sky",
       displayName: "Sky Forme Shaymin",
       type: Type.Grass,
       type2: Type.Flying,
@@ -816,12 +870,12 @@ export const pgen4: Generation = {
       name: "arceus",
       displayName: "Arceus",
       type: Type.Normal,
-      variants: ["Legend Arceus"],
       category: PokemonCategory.Mythical
     },
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-fighting",
       displayName: "Fighting Arceus",
       type: Type.Fighting,
       isVariant: true
@@ -829,6 +883,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-flying",
       displayName: "Flying Arceus",
       type: Type.Flying,
       isVariant: true
@@ -836,6 +891,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-poison",
       displayName: "Poison Arceus",
       type: Type.Poison,
       isVariant: true
@@ -843,6 +899,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-ground",
       displayName: "Ground Arceus",
       type: Type.Ground,
       isVariant: true
@@ -850,6 +907,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-rock",
       displayName: "Rock Arceus",
       type: Type.Rock,
       isVariant: true
@@ -857,6 +915,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-bug",
       displayName: "Bug Arceus",
       type: Type.Bug,
       isVariant: true
@@ -864,6 +923,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-ghost",
       displayName: "Ghost Arceus",
       type: Type.Ghost,
       isVariant: true
@@ -871,6 +931,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-steel",
       displayName: "Steel Arceus",
       type: Type.Steel,
       isVariant: true
@@ -878,6 +939,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-fire",
       displayName: "Fire Arceus",
       type: Type.Fire,
       isVariant: true
@@ -885,6 +947,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-water",
       displayName: "Water Arceus",
       type: Type.Water,
       isVariant: true
@@ -892,6 +955,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-grass",
       displayName: "Grass Arceus",
       type: Type.Grass,
       isVariant: true
@@ -899,6 +963,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-electric",
       displayName: "Electric Arceus",
       type: Type.Electric,
       isVariant: true
@@ -906,6 +971,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-psychic",
       displayName: "Psychic Arceus",
       type: Type.Psychic,
       isVariant: true
@@ -913,6 +979,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-ice",
       displayName: "Ice Arceus",
       type: Type.Ice,
       isVariant: true
@@ -920,6 +987,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-dragon",
       displayName: "Dragon Arceus",
       type: Type.Dragon,
       isVariant: true
@@ -927,6 +995,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-dark",
       displayName: "Dark Arceus",
       type: Type.Dark,
       isVariant: true
@@ -934,6 +1003,7 @@ export const pgen4: Generation = {
     {
       dex: 493,
       name: "arceus",
+      img: "arceus-fairy",
       displayName: "Fairy Arceus",
       type: Type.Fairy,
       isVariant: true
