@@ -2,5 +2,7 @@ export enum MoveCategory {
   Physical = "Physical",
   Special = "Special",
   Status = "Status",
-  Unknown = "???"
+
+  Max = "Max",
+  GMax = "G-Max"
 }

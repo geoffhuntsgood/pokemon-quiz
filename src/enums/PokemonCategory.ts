@@ -1,8 +1,8 @@
 export enum PokemonCategory {
-  Baby = "Baby",
-  Fossil = "Fossil",
-  Legendary = "Legendary",
-  Mythical = "Mythical",
-  Paradox = "Paradox",
-  UltraBeast = "UltraBeast"
+  Baby = "Babies",
+  Fossil = "Fossils",
+  Legendary = "Legendaries",
+  Mythical = "Mythicals",
+  Paradox = "Paradoxes",
+  UltraBeast = "Ultra Beasts"
 }

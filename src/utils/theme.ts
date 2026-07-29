@@ -1,38 +1,41 @@
-import { colors } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
+import { Type } from "../enums";
 
-const primary = colors.grey[50];
-const secondary = colors.yellow[700];
-const background = "#141414";
-const border = colors.grey[700];
+const background = "#141456";
+const border = "cornflowerblue";
+
+export const colors = {
+  [Type.Bug]: "#A8B81F",
+  [Type.Dark]: "#705848",
+  [Type.Dragon]: "#7038F8",
+  [Type.Electric]: "#F9D080",
+  [Type.Fairy]: "#EE99AC",
+  [Type.Fighting]: "#C03028",
+  [Type.Fire]: "#F07F30",
+  [Type.Flying]: "#A890F0",
+  [Type.Ghost]: "#705998",
+  [Type.Grass]: "#78C850",
+  [Type.Ground]: "#E0C068",
+  [Type.Ice]: "#98D8D8",
+  [Type.Normal]: "#A8A878",
+  [Type.Poison]: "#A040A1",
+  [Type.Psychic]: "#F85988",
+  [Type.Rock]: "#B8A038",
+  [Type.Steel]: "#B9B7D0",
+  [Type.Varies]: "#000000",
+  [Type.Water]: "#6891F0"
+};
 
 export const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
-        contained: {
-          width: "10rem",
-          color: background,
-          fontSize: "2rem",
-          backgroundColor: secondary
-        }
-      }
-    },
-    MuiFormControlLabel: {
-      styleOverrides: {
         root: {
-          margin: "0 auto",
-          color: primary
-        }
-      }
-    },
-    MuiFormHelperText: {
-      styleOverrides: {
-        root: {
-          color: primary,
-          "&.Mui-disabled": {
-            color: border
-          }
+          fontFamily: "PokemonGb",
+          minWidth: "8rem",
+          color: "black",
+          padding: "1rem",
+          margin: "0.25rem"
         }
       }
     },
@@ -40,117 +43,127 @@ export const theme = createTheme({
       styleOverrides: {
         container: {
           width: "90vw",
-          margin: "auto"
+          margin: "auto",
+          overflowX: "hidden",
+          overflowY: "auto"
         }
       }
     },
     MuiIconButton: {
       styleOverrides: {
         root: {
-          color: secondary
+          padding: "0",
+          float: "right"
+        }
+      }
+    },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          fontSize: "2rem"
         }
       }
     },
     MuiInputLabel: {
       styleOverrides: {
         root: {
-          color: primary,
-          "&.Mui-disabled": {
+          marginTop: "-10px",
+          fontSize: "2rem",
+          color: "white",
+          "&.MuiInputLabel-shrink": {
             color: border
-          }
-        }
-      }
-    },
-    MuiRadio: {
-      styleOverrides: {
-        root: {
-          "& .MuiSvgIcon-root": {
-            color: primary
-          }
-        }
-      }
-    },
-    MuiSelect: {
-      styleOverrides: {
-        root: {
-          width: "20rem",
-          fontSize: "1.5rem",
-          color: primary,
-          "& fieldset": {
-            borderColor: border
           },
-          "& .MuiSvgIcon-root": {
-            color: primary
+          "&.Mui-disabled": {
+            color: "gray"
+          }
+        }
+      }
+    },
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          fontSize: "2rem",
+          color: "goldenrod",
+          "&:hover, &.Mui-selected": {
+            color: "yellow"
           }
         }
       }
     },
     MuiTabs: {
       styleOverrides: {
+        indicator: {
+          backgroundColor: "yellow"
+        },
         root: {
-          marginBottom: "15px"
-        }
-      }
-    },
-    MuiTable: {
-      styleOverrides: {
-        root: {
-          border: `1px solid ${border}`,
-          borderRadius: "3px"
+          textAlign: "center",
+          marginBottom: "1rem"
         }
       }
     },
     MuiTableCell: {
       styleOverrides: {
         root: {
-          backgroundColor: background,
           fontSize: "1.5rem",
-          lineHeight: "1rem"
+          lineHeight: "1rem",
+          borderColor: border,
+          backgroundColor: background
+        }
+      }
+    },
+    MuiTableContainer: {
+      styleOverrides: {
+        root: {
+          border: `2px solid ${border}`,
+          borderRadius: "3px",
+          maxHeight: "60vh",
+          margin: "0 auto"
         }
       }
     },
     MuiTextField: {
       styleOverrides: {
         root: {
-          width: "100%",
+          width: "20rem",
+          marginBottom: "2rem",
           backgroundColor: background,
-          border: `1px solid ${border}`,
+          border: `2px solid ${border}`,
           borderRadius: "5px"
+        }
+      }
+    },
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          fontSize: "1.5rem"
         }
       }
     }
   },
   palette: {
-    primary: {
-      main: colors.blue[900]
-    },
     text: {
-      primary: primary,
-      secondary: secondary
+      primary: "#FFFFFF"
     }
   },
   typography: {
     fontFamily: "Jersey10",
-    fontSize: 24,
+    h1: {
+      fontSize: "3rem",
+      color: "white",
+      backgroundColor: "darkblue",
+      textAlign: "center"
+    },
     h2: {
       fontFamily: "PokemonGb",
       fontSize: "2rem",
-      fontWeight: "bold",
-      margin: "0 auto",
-      padding: "10px 0",
+      padding: "1rem",
       textAlign: "center"
     },
     h3: {
-      fontFamily: "PokemonGb",
-      fontSize: "1rem",
-      margin: "1.5rem"
-    },
-    h4: {
-      fontSize: "1rem"
+      color: "white",
+      fontSize: "1.5rem",
+      borderRadius: "10px",
+      textAlign: "center"
     }
-  },
-  shape: {
-    borderRadius: 4
-  },
-  spacing: 8
+  }
 });
