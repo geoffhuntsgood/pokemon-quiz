@@ -10,11 +10,10 @@ export type ButtonSet =
   | Type[]
   | MoveCategory[]
   | PokemonCategory[]
-  | ["Unique"];
+  | string[];
 
-export type ButtonFunc =
-  | GenNumber
-  | Type
-  | MoveCategory
-  | PokemonCategory
-  | "Unique";
+export type BestTime = {
+  player_name: boolean;
+  category: string;
+  best_time: string;
+};

@@ -2,7 +2,7 @@ import { Box, Button, lighten } from "@mui/material";
 import type { JSX } from "react";
 import { Type } from "../enums";
 import { colors } from "../utils/theme";
-import type { ButtonFunc, ButtonSet } from "../utils/types";
+import type { ButtonSet } from "../utils/types";
 
 export const PKButtonSet = ({
   buttonSet,
@@ -10,7 +10,7 @@ export const PKButtonSet = ({
   addOn
 }: {
   buttonSet: ButtonSet;
-  handleClick: (b: ButtonFunc) => void;
+  handleClick: Function;
   addOn?: JSX.Element;
 }) => (
   <Box sx={{ textAlign: "center" }}>

@@ -30,7 +30,7 @@ export const Configuration = ({
   const [subSelection, setSubSelection] = useState<SubSelection>("Generation");
 
   const selectByGeneration = (gen: GenNumber): Settings => {
-    const label = `${gen === GenNumber.All ? "All the " : `${gen}`} ${selection}`;
+    const label = `${gen === GenNumber.All ? "All the" : `${gen}`} ${selection}`;
     const items =
       selection === "Pokémon"
         ? getPokemonByGeneration(gen)

@@ -4,13 +4,14 @@ import {
   PauseCircle,
   PlayCircle
 } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { useReward } from "react-rewards";
 import { useStopwatch } from "react-timer-hook";
 import type { Settings } from "../classes/Settings";
 import { PKTimer, PKTooltip } from "../inputs";
 import { PKInput } from "../inputs/PKInput";
+import { getTime } from "../utils/externalApi";
 import { QuizTable } from "./QuizTable";
 
 export const Quiz = ({
@@ -20,6 +21,7 @@ export const Quiz = ({
   settings: Settings;
   setStart: Dispatch<SetStateAction<boolean>>;
 }) => {
+  const [best, setBest] = useState("No best yet");
   const [headers, setHeaders] = useState<string[]>([]);
   const [foundItems, setFoundItems] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -38,6 +40,11 @@ export const Quiz = ({
   const { reward: reward2 } = useReward("done", "emoji", rewardSettings);
 
   const iconSize = window.innerWidth < 800 ? "2rem" : "3rem";
+
+  const end = () => {
+    stopwatch.pause();
+    setDone(true);
+  };
 
   useEffect(() => {
     if (foundItems.length === settings.items.length) {
@@ -59,11 +66,6 @@ export const Quiz = ({
     }
   }, [settings.items]);
 
-  const end = () => {
-    stopwatch.pause();
-    setDone(true);
-  };
-
   useEffect(() => {
     if (foundItems.length === settings.items.length) {
       end();
@@ -71,8 +73,18 @@ export const Quiz = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [foundItems]);
 
+  useEffect(() => {
+    getTime(settings.label).then((time: string) => {
+      setBest(time);
+    });
+  }, []);
+
   return (
     <>
+      <Box sx={{ position: "absolute", top: "3.5rem", left: "0" }}>
+        <Typography variant="h3">{best}</Typography>
+      </Box>
+
       <span id="finished" />
       <PKTimer stopwatch={stopwatch} />
       <span id="done" style={{ float: "right" }} />

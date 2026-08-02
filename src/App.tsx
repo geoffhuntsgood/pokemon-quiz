@@ -1,4 +1,4 @@
-import { ThemeProvider, Typography } from "@mui/material";
+import { Box, Button, ThemeProvider, Typography } from "@mui/material";
 import { useState } from "react";
 import { Settings } from "./classes/Settings";
 import { Configuration } from "./components/Configuration";
@@ -8,11 +8,12 @@ import { theme } from "./utils/theme";
 const App = () => {
   const defaultLabel = "Pokémon Quiz: Gotta name 'em all!";
 
+  const [start, setStart] = useState(false);
+
   const [settings, setSettings] = useState<Settings>({
     label: defaultLabel,
     items: []
   });
-  const [start, setStart] = useState(false);
 
   return (
     <ThemeProvider theme={theme}>
