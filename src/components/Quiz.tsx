@@ -16,9 +16,11 @@ import { QuizTable } from "./QuizTable";
 
 export const Quiz = ({
   settings,
+  setSettings,
   setStart
 }: {
   settings: Settings;
+  setSettings: Dispatch<SetStateAction<Settings>>;
   setStart: Dispatch<SetStateAction<boolean>>;
 }) => {
   const [best, setBest] = useState("No best yet");
@@ -94,6 +96,8 @@ export const Quiz = ({
             player_name: val,
             category: settings.label,
             best_time: `${stopwatch.hours}:${String(stopwatch.minutes).padStart(2, "0")}:${String(stopwatch.seconds).padStart(2, "0")}`
+          }).then((result: string) => {
+            setBest(result);
           })
         }
       />
@@ -110,7 +114,13 @@ export const Quiz = ({
         <PKTooltip
           helpText="Restart?"
           color="darkred"
-          onClick={() => setStart(false)}
+          onClick={() => {
+            setSettings({
+              label: "Pokémon Quiz: Gotta name 'em all!",
+              items: []
+            });
+            setStart(false);
+          }}
           icon={<Cancel sx={{ fontSize: iconSize }} />}
         />
         {!done && (

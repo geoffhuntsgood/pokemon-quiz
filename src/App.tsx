@@ -27,7 +27,7 @@ const App = () => {
         <Configuration setSettings={setSettings} setStart={setStart} />
       )}
 
-      {start && <Quiz settings={settings} setStart={setStart} />}
+      {start && <Quiz settings={settings} setSettings={setSettings} setStart={setStart} />}
     </ThemeProvider>
   );
 };
