@@ -1,4 +1,4 @@
-import { Box, Button, ThemeProvider, Typography } from "@mui/material";
+import { ThemeProvider, Typography } from "@mui/material";
 import { useState } from "react";
 import { Settings } from "./classes/Settings";
 import { Configuration } from "./components/Configuration";

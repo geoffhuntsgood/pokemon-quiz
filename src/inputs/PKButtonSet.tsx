@@ -10,6 +10,7 @@ export const PKButtonSet = ({
   addOn
 }: {
   buttonSet: ButtonSet;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   handleClick: Function;
   addOn?: JSX.Element;
 }) => (

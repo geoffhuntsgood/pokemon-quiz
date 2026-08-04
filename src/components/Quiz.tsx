@@ -9,9 +9,9 @@ import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { useReward } from "react-rewards";
 import { useStopwatch } from "react-timer-hook";
 import type { Settings } from "../classes/Settings";
-import { PKTimer, PKTooltip } from "../inputs";
+import { PKDialog, PKTimer, PKTooltip } from "../inputs";
 import { PKInput } from "../inputs/PKInput";
-import { getTime } from "../utils/externalApi";
+import { getTime, setTime } from "../utils/externalApi";
 import { QuizTable } from "./QuizTable";
 
 export const Quiz = ({
@@ -25,6 +25,7 @@ export const Quiz = ({
   const [headers, setHeaders] = useState<string[]>([]);
   const [foundItems, setFoundItems] = useState<string[]>([]);
   const [done, setDone] = useState(false);
+  const [saveDialogOpen, setSaveDialogOpen] = useState(false);
 
   const stopwatch = useStopwatch({ autoStart: true, interval: 20 });
 
@@ -69,6 +70,7 @@ export const Quiz = ({
   useEffect(() => {
     if (foundItems.length === settings.items.length) {
       end();
+      setSaveDialogOpen(true);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [foundItems]);
@@ -77,11 +79,26 @@ export const Quiz = ({
     getTime(settings.label).then((time: string) => {
       setBest(time);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
-      <Box sx={{ position: "absolute", top: "3.5rem", left: "0" }}>
+      <PKDialog
+        title="Save Time"
+        label="Enter your name!"
+        open={saveDialogOpen}
+        setOpen={setSaveDialogOpen}
+        handleAction={(val: string) =>
+          setTime({
+            player_name: val,
+            category: settings.label,
+            best_time: `${stopwatch.hours}:${String(stopwatch.minutes).padStart(2, "0")}:${String(stopwatch.seconds).padStart(2, "0")}`
+          })
+        }
+      />
+
+      <Box sx={{ position: "absolute", top: "4.5rem", left: "1rem" }}>
         <Typography variant="h3">{best}</Typography>
       </Box>
 

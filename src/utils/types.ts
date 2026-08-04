@@ -13,7 +13,7 @@ export type ButtonSet =
   | string[];
 
 export type BestTime = {
-  player_name: boolean;
+  player_name: string;
   category: string;
   best_time: string;
 };

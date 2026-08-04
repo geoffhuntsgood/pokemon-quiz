@@ -39,6 +39,13 @@ export const theme = createTheme({
         }
       }
     },
+    MuiDialog: {
+      styleOverrides: {
+        paper: {
+          backgroundColor: background
+        }
+      }
+    },
     MuiGrid: {
       styleOverrides: {
         container: {
