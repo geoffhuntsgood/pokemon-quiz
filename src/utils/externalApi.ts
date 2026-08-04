@@ -1,38 +1,48 @@
+import axios from "axios";
 import type { BestTime } from "./types";
 
 const url = "https://geoff-server.onrender.com/quiz-best-time/";
 
 export const getTime = async (category: string) => {
-  const response = await fetch(`${url}${category}`, {
-    mode: "no-cors"
-  });
-
-  if (response.ok) {
-    const result: BestTime = await response.json();
-    return `Best: ${result.best_time} by ${result.player_name}`;
-  } else {
-    return "No best yet!";
-  }
+  axios
+    .get(url, {
+      params: {
+        category
+      }
+    })
+    .then((response) => {
+      const data = response.data;
+      if (data) {
+        if (data.missing) {
+          return "No best yet!";
+        } else if (data.best) {
+          const best: BestTime = data.best;
+          return `Best: ${best.best_time} by ${best.player_name}`;
+        }
+      } else {
+        return "Can't get times!";
+      }
+    });
 };
 
 export const setTime = async (bestTime: BestTime) => {
-  const response = await fetch(url, {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(bestTime)
-  });
-
-  if (response.ok) {
-    const result = await response.json();
-    if (result.info) {
-      return result.info;
-    } else if (result.err) {
-      return result.err;
-    }
-  } else {
-    return "Times not updated!";
-  }
+  axios
+    .post(url, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: bestTime
+    })
+    .then((response) => {
+      const data = response.data;
+      if (data) {
+        if (data.info) {
+          return `Saved time ${bestTime.best_time} for ${bestTime.player_name}`;
+        } else if (data.err) {
+          return data.err;
+        }
+      } else {
+        return "Time not saved!";
+      }
+    });
 };
