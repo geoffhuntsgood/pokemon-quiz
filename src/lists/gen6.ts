@@ -703,7 +703,8 @@ export const gen6: Generation = {
     },
     {
       dex: 658,
-      name: "greninja-mega",
+      name: "greninja",
+      img: "greninja-mega",
       displayName: "Mega Greninja",
       type: Type.Water,
       type2: Type.Dark,
