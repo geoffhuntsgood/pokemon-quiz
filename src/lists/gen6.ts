@@ -648,7 +648,8 @@ export const gen6: Generation = {
     },
     {
       dex: 652,
-      name: "chesnaught-mega",
+      name: "chesnaught",
+      img: "chesnaught-mega",
       displayName: "Mega Chesnaught",
       type: Type.Grass,
       type2: Type.Fighting,
