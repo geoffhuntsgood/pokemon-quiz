@@ -9,7 +9,7 @@ import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { useReward } from "react-rewards";
 import { useStopwatch } from "react-timer-hook";
 import type { Settings } from "../classes/Settings";
-import { PKDialog, PKTimer, PKTooltip } from "../inputs";
+import { PKLeaveDialog, PKSaveDialog, PKTimer, PKTooltip } from "../inputs";
 import { PKInput } from "../inputs/PKInput";
 import { getTime, setTime } from "../utils/externalApi";
 import { QuizTable } from "./QuizTable";
@@ -28,6 +28,7 @@ export const Quiz = ({
   const [foundItems, setFoundItems] = useState<string[]>([]);
   const [done, setDone] = useState(false);
   const [saveDialogOpen, setSaveDialogOpen] = useState(false);
+  const [leaveDialogOpen, setLeaveDialogOpen] = useState(false);
 
   const stopwatch = useStopwatch({ autoStart: true, interval: 20 });
 
@@ -47,6 +48,14 @@ export const Quiz = ({
   const end = () => {
     stopwatch.pause();
     setDone(true);
+  };
+
+  const reset = () => {
+    setSettings({
+      label: "Pokémon Quiz: Gotta name 'em all!",
+      items: []
+    });
+    setStart(false);
   };
 
   useEffect(() => {
@@ -86,7 +95,7 @@ export const Quiz = ({
 
   return (
     <>
-      <PKDialog
+      <PKSaveDialog
         title="Save Time"
         label="Enter your name!"
         open={saveDialogOpen}
@@ -102,6 +111,17 @@ export const Quiz = ({
         }
       />
 
+      <PKLeaveDialog
+        title="Are you sure?"
+        description="You'll lose your current progress!"
+        open={leaveDialogOpen}
+        setOpen={setLeaveDialogOpen}
+        yesLabel="Yeah"
+        noLabel="Nah"
+        handleYesAction={reset}
+        handleNoAction={() => stopwatch.start()}
+      />
+
       <Box sx={{ position: "absolute", top: "4.5rem", left: "1rem" }}>
         <Typography variant="h3">{best}</Typography>
       </Box>
@@ -115,11 +135,12 @@ export const Quiz = ({
           helpText="Restart?"
           color="darkred"
           onClick={() => {
-            setSettings({
-              label: "Pokémon Quiz: Gotta name 'em all!",
-              items: []
-            });
-            setStart(false);
+            if (!done) {
+              stopwatch.pause();
+              setLeaveDialogOpen(true);
+            } else {
+              reset();
+            }
           }}
           icon={<Cancel sx={{ fontSize: iconSize }} />}
         />

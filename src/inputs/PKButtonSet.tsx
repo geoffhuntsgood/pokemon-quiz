@@ -14,7 +14,7 @@ export const PKButtonSet = ({
   handleClick: Function;
   addOn?: JSX.Element;
 }) => (
-  <Box sx={{ textAlign: "center" }}>
+  <Box sx={{ margin: "0 auto", textAlign: "center", maxWidth: "50rem" }}>
     {buttonSet.map((entry) => {
       const color = colors[entry as Type] || "#DAA520";
 

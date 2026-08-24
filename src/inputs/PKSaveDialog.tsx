@@ -8,7 +8,7 @@ import {
 import { useState, type Dispatch, type SetStateAction } from "react";
 import { PKButtonSet } from "./PKButtonSet";
 
-export const PKDialog = ({
+export const PKSaveDialog = ({
   title,
   label,
   open,
