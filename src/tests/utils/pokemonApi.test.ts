@@ -1,4 +1,3 @@
-import { describe, expect, test } from "vitest";
 import { GenNumber, PokemonCategory, Type } from "../../enums";
 import {
   getPokemonByCategory,

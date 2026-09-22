@@ -1,4 +1,3 @@
-import { describe, expect, test } from "vitest";
 import { Ability, Generation, Move, Pokemon, Settings } from "../../classes";
 import { GenNumber, MoveCategory, PokemonCategory, Type } from "../../enums";
 
