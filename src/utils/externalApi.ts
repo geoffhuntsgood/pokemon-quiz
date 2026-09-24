@@ -1,41 +1,40 @@
 import axios from "axios";
 import type { BestTime } from "./types";
 
-const url = "https://geoff-server.onrender.com/quiz-best-time/";
+const baseUrl = "https://geoff-server.onrender.com";
 
 export const getTime = async (category: string) => {
-  const response = await axios.get(`${url}${category}`);
-  const data = response.data;
-  if (data) {
-    if (data.missing) {
+  const response = await axios.get(`${baseUrl}/get-best-time/${category}`);
+
+  switch (response.status) {
+    case 500:
+      return "Can't get times.";
+    case 204:
       return "No best yet!";
-    } else if (data.json_agg) {
-      const best: BestTime = data.json_agg[0];
+    case 200: {
+      const best: BestTime = response.data.json_agg[0];
       return `Best: ${best.best_time} by ${best.player_name}`;
-    } else {
-      return "Can't get times";
     }
-  } else {
-    return "Can't get times!";
+    default:
+      return "Can't get times...";
   }
 };
 
-export const setTime = async (bestTime: BestTime) => {
-  const response = await axios.post(url, bestTime, {
+export const saveTime = async (bestTime: BestTime) => {
+  const response = await axios.post(`${baseUrl}/save-best-time`, bestTime, {
     headers: {
       "Content-Type": "application/json"
     }
   });
-  const data = response.data;
-  if (data) {
-    if (data.info) {
-      return `Saved time ${bestTime.best_time} for ${bestTime.player_name}`;
-    } else if (data.err) {
-      return data.err as string;
-    } else {
-      return "Time not saved";
-    }
-  } else {
-    return "Time not saved!";
+
+  switch (response.status) {
+    case 500:
+      return "Couldn't save time :(";
+    case 200:
+      return response.data.msg;
+    case 201:
+      return `Saved ${bestTime.best_time} for ${bestTime.player_name}!`;
+    default:
+      return "Couldn't save time...";
   }
 };
