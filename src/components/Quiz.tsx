@@ -11,7 +11,7 @@ import { useStopwatch } from "react-timer-hook";
 import type { Settings } from "../classes/Settings";
 import { PKLeaveDialog, PKSaveDialog, PKTimer, PKTooltip } from "../inputs";
 import { PKInput } from "../inputs/PKInput";
-import { getTime, setTime } from "../utils/externalApi";
+import { getTime, saveTime } from "../utils/externalApi";
 import { QuizTable } from "./QuizTable";
 
 export const Quiz = ({
@@ -101,7 +101,7 @@ export const Quiz = ({
         open={saveDialogOpen}
         setOpen={setSaveDialogOpen}
         handleAction={(val: string) =>
-          setTime({
+          saveTime({
             player_name: val,
             category: settings.label,
             best_time: `${stopwatch.hours}:${String(stopwatch.minutes).padStart(2, "0")}:${String(stopwatch.seconds).padStart(2, "0")}`

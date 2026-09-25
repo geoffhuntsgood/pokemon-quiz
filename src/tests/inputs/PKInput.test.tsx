@@ -25,21 +25,25 @@ describe("PKInput tests", () => {
   };
 
   test("Check initial render", async () => {
-    const screen = await getScreen(false, [], []);
-    expect(screen.getByText("Test Input")).toBeVisible();
+    const screen = await getScreen(false, [], getPokemonByType(Type.Bug));
+    expect(screen.getByText("Test Input (0/105)")).toBeVisible();
   });
 
   test("Check adding item to found list", async () => {
     const screen = await getScreen(false, [], getPokemonByType(Type.Bug));
-    await userEvent.type(screen.getByText("Test Input"), "weedle");
+    await userEvent.type(screen.getByText("Test Input (0/105)"), "weedle");
 
     expect(setFoundItemMock).toHaveBeenCalledWith(["Weedle"]);
   });
 
   test("Don't add an existing item", async () => {
     vi.resetAllMocks();
-    const screen = await getScreen(false, ["Weedle"], getPokemonByType(Type.Bug));
-    await userEvent.type(screen.getByText("Test Input"), "weedle");
+    const screen = await getScreen(
+      false,
+      ["Weedle"],
+      getPokemonByType(Type.Bug)
+    );
+    await userEvent.type(screen.getByText("Test Input (1/105)"), "weedle");
     expect(setFoundItemMock).not.toHaveBeenCalled();
   });
 });

@@ -31,7 +31,7 @@ describe("PKSaveDialog tests", () => {
   test("Check save button action", async () => {
     const screen = await getScreen(true);
     await userEvent.type(screen.getByText("Test Description"), "12345");
-    await screen.getByText("SAVE").click();
+    await screen.getByText("Save").click();
     expect(handleActionMock).toHaveBeenCalledWith("12345");
     expect(setOpenMock).toHaveBeenCalledWith(false);
   });
